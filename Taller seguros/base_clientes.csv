@@ -1,0 +1,1003 @@
+date;custid;sex;is.employed;annual_incomeUSD;marital.stat;health.ins;housing.type;vehicle;num.vehicles;age;state.of.res
+10/24/2016 5:09:23;2068;1;;11300;Married;TRUE;Homeowner free and clear;YES;2;49;Michigan
+10/24/2016 5:09:55;2073;1;;0;Married;TRUE;Rented;YES;3;40;Florida
+10/24/2016 5:13:07;2848;2;TRUE;4500;Never Married;FALSE;Rented;YES;3;22;Georgia
+10/24/2016 5:14:17;5641;2;TRUE;20000;Never Married;FALSE;Occupied with no rent;NO;4;22;New Mexico
+10/24/2016 5:14:25;6369;1;TRUE;12000;Never Married;TRUE;Rented;YES;1;31;Florida
+10/24/2016 5:16:43;8322;1;TRUE;180000;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;40;NewYork
+10/24/2016 5:16:51;8521;2;TRUE;120000;Never Married;TRUE;Homeowner free and clear;YES;1;39;Idaho
+10/24/2016 5:16:55;12195;2;TRUE;40000;Married;TRUE;Rented;YES;3;48;Michigan
+10/24/2016 5:17:49;14989;2;;9400;Married;TRUE;Rented;YES;2;44;Illinois
+10/24/2016 5:18:51;15917;1;TRUE;24000;Divorced/Separated;TRUE;Homeowner free and clear;YES;1;70;North Caroli
+10/24/2016 5:20:21;16551;1;;7000;Married;TRUE;Homeowner with mortgage/loan;YES;2;46;Georgia
+10/24/2016 5:21:20;17134;2;TRUE;220000;Married;TRUE;Homeowner free and clear;YES;2;33;India
+10/24/2016 5:21:28;17946;1;TRUE;85000;Divorced/Separated;TRUE;Rented;YES;1;50+;New Hampshire
+10/24/2016 5:22:13;18487;1;TRUE;89200;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;63;Georgia
+10/24/2016 5:22:31;20383;2;TRUE;170000;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;35;South Caroli
+10/24/2016 5:24:08;22295;2;TRUE;14400;Married;TRUE;Homeowner free and clear;YES;3;54;Pennsylvania
+10/24/2016 5:24:11;25863;2;;41000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;70;Virginia
+10/24/2016 5:26:18;26057;2;TRUE;30000;Married;TRUE;;NO;;28;Florida
+10/24/2016 5:26:35;26355;2;TRUE;80000;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;36;New Jersey
+10/24/2016 5:27:00;27214;2;;18800;Married;TRUE;Homeowner free and clear;YES;2;68;Ohio
+10/24/2016 5:30:40;27445;1;TRUE;35000;Never Married;TRUE;Rented;YES;2;53;Florida
+10/24/2016 5:31:49;27761;2;TRUE;24000;Never Married;FALSE;Rented;YES;2;33;Illinois
+10/24/2016 5:33:19;27928;2;TRUE;75000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;2;58;New York
+10/24/2016 5:33:28;30768;2;TRUE;80000;Married;TRUE;Homeowner with mortgage/loan;YES;2;50;New Jersey
+10/24/2016 5:34:36;31710;1;TRUE;397000;Widowed;TRUE;Homeowner with mortgage/loan;YES;2;55;Missouri
+10/24/2016 5:34:37;33651;1;TRUE;45000;Never Married;TRUE;Homeowner with mortgage/loan;YES;2;44;California
+10/24/2016 5:34:40;33828;1;TRUE;24900;Married;TRUE;Homeowner with mortgage/loan;YES;2;49;Wisconsin
+10/24/2016 5:35:46;36825;2;TRUE;17500;Married;FALSE;Rented;YES;2;35;South Dakota
+10/24/2016 5:36:13;37224;2;TRUE;25800;Married;TRUE;Homeowner with mortgage/loan;YES;2;48;Colorado
+10/24/2016 5:36:44;38827;1;;9700;Married;TRUE;Homeowner with mortgage/loan;YES;2;72;Oklahoma
+10/24/2016 5:36:57;40132;2;TRUE;22000;Married;TRUE;Homeowner with mortgage/loan;YES;3;66;Illinois
+10/24/2016 5:37:19;40449;2;;13000;Married;TRUE;Homeowner free and clear;YES;3;84;Kentucky
+10/24/2016 5:37:49;42374;2;;7800;Never Married;TRUE;Homeowner free and clear;YES;1;65;Kentucky
+10/24/2016 5:38:41;46099;2;TRUE;36880;Never Married;TRUE;Homeowner with mortgage/loan;YES;2;65;Massachusetts
+10/24/2016 5:39:58;46791;2;;22700;Married;TRUE;Homeowner free and clear;YES;2;67;Oklahoma
+10/24/2016 5:41:24;47009;1;TRUE;34300;Married;TRUE;Rented;YES;1;33;New York
+10/24/2016 5:41:34;48479;2;TRUE;90000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;2;58;Texas
+10/24/2016 5:42:42;49496;2;;94400;Widowed;TRUE;Homeowner free and clear;YES;2;88;Wisconsin
+10/24/2016 5:44:28;50220;2;;22300;Divorced/Separated;TRUE;Rented;YES;1;85;Texas
+10/24/2016 5:45:29;51723;1;;15700;Widowed;TRUE;Homeowner free and clear;YES;1;78;Ohio
+10/24/2016 5:45:54;52197;2;;65100;Married;TRUE;Homeowner free and clear;YES;2;66;Florida
+10/24/2016 5:45:58;52382;2;TRUE;45050;Married;TRUE;Homeowner with mortgage/loan;YES;3;39;Ohio
+10/24/2016 5:46:15;52420;2;TRUE;46000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;57;Florida
+10/24/2016 5:46:36;52436;1;TRUE;139000;Married;TRUE;Homeowner with mortgage/loan;YES;2;46;Pennsylvania
+10/24/2016 5:49:18;53186;1;;0;Married;TRUE;Homeowner with mortgage/loan;YES;2;61;Pennsylvania
+10/24/2016 5:49:22;53214;2;TRUE;84010;Married;TRUE;Homeowner with mortgage/loan;YES;2;57;New York
+10/24/2016 5:49:52;53759;1;;0;Married;TRUE;Homeowner with mortgage/loan;YES;2;34;Ohio
+10/24/2016 5:50:03;54177;2;FALSE;51500;Married;TRUE;Homeowner free and clear;YES;2;86;New York
+10/24/2016 5:50:17;55873;1;;25400;Never Married;TRUE;Rented;YES;1;60;New York
+10/24/2016 5:51:41;55992;1;;0;Married;TRUE;Rented;YES;1;38;Colorado
+10/24/2016 5:51:59;56040;1;;0;Married;TRUE;Rented;YES;2;39;California
+10/24/2016 5:52:15;62999;2;TRUE;91000;Married;TRUE;Homeowner with mortgage/loan;YES;4;51;New York
+10/24/2016 5:53:12;65004;1;TRUE;150000;Never Married;TRUE;Homeowner with mortgage/loan;YES;4;49;Florida
+10/24/2016 5:53:20;66778;2;TRUE;19000;Married;TRUE;Homeowner with mortgage/loan;YES;2;40;Virginia
+10/24/2016 5:54:15;67776;2;TRUE;52000;Married;TRUE;Homeowner with mortgage/loan;YES;1;38;Florida
+10/24/2016 5:54:15;68013;2;;100;Divorced/Separated;FALSE;;NO;;28;California
+10/24/2016 5:54:27;68221;2;TRUE;78000;Married;TRUE;Homeowner with mortgage/loan;YES;2;29;California
+10/24/2016 5:54:40;69062;2;TRUE;120300;Married;TRUE;Homeowner free and clear;YES;4;59;California
+10/24/2016 5:55:38;72741;1;;42500;Widowed;TRUE;Homeowner free and clear;NO;;88;Michigan
+10/24/2016 5:55:55;74447;2;TRUE;162000;Married;TRUE;Homeowner with mortgage/loan;YES;4;33;Maryland
+10/24/2016 5:56:11;76182;1;TRUE;18200;Divorced/Separated;FALSE;Homeowner with mortgage/loan;YES;1;41;Connecticut
+10/24/2016 5:57:28;77312;2;TRUE;37200;Married;FALSE;Homeowner free and clear;YES;2;35;Mississippi
+10/24/2016 5:58:03;78476;2;TRUE;76000;Married;TRUE;Homeowner with mortgage/loan;YES;4;60;Illinois
+10/24/2016 5:58:10;79069;2;TRUE;30000;Married;FALSE;Rented;YES;1;40;Texas
+10/24/2016 5:58:48;80274;2;;37300;Married;TRUE;Homeowner free and clear;YES;5;68;New Jersey
+10/24/2016 5:59:37;80549;2;;85200;Married;TRUE;Homeowner free and clear;YES;2;75;Arkansas
+10/24/2016 6:00:35;82503;2;TRUE;70000;Married;TRUE;Homeowner free and clear;YES;2;69;California
+10/24/2016 6:01:41;84636;2;TRUE;33600;Married;FALSE;Rented;YES;2;32;South Caroli
+10/24/2016 6:02:14;84879;;;;;;;;;;
+10/24/2016 6:03:38;85398;1;TRUE;21600;Never Married;FALSE;Homeowner with mortgage/loan;YES;6;44;California
+10/24/2016 6:05:28;86711;2;;47950;Never Married;TRUE;Homeowner free and clear;YES;1;76;California
+10/24/2016 6:05:39;86786;1;TRUE;39600;Never Married;TRUE;Rented;YES;1;49;New Jersey
+10/24/2016 6:06:10;90303;2;;0;Never Married;FALSE;;NO;;45;Kentucky
+10/24/2016 6:07:43;90863;2;TRUE;285020;Married;TRUE;Homeowner with mortgage/loan;YES;3;37;Washington
+10/24/2016 6:08:20;92706;2;;9100;Never Married;TRUE;Rented;NO;;82;Rhode Island
+10/24/2016 6:08:43;94743;2;TRUE;299000;Married;TRUE;Homeowner free and clear;YES;2;64;Missouri
+10/24/2016 6:09:23;96964;2;TRUE;266200;Married;TRUE;Homeowner with mortgage/loan;YES;2;69;Texas
+10/24/2016 6:09:26;97247;1;;70500;Widowed;TRUE;Homeowner with mortgage/loan;YES;1;78;Idaho
+10/24/2016 6:09:54;98086;2;;52100;Married;TRUE;Homeowner with mortgage/loan;YES;2;69;Florida
+10/24/2016 6:09:58;99068;1;TRUE;38800;Never Married;TRUE;Rented;YES;3;34;New York
+10/24/2016 6:10:03;100475;1;TRUE;28800;Divorced/Separated;TRUE;Rented;YES;1;48;Pennsylvania
+10/24/2016 6:10:18;102269;2;;14400;Married;TRUE;Rented;YES;1;84;Washington
+10/24/2016 6:10:33;103389;1;TRUE;130000;Never Married;TRUE;Rented;YES;1;41;Minnesota
+10/24/2016 6:11:02;104048;1;TRUE;15500;Married;TRUE;Homeowner with mortgage/loan;YES;3;69;Ohio
+10/24/2016 6:11:05;104506;2;;30800;Married;TRUE;Homeowner with mortgage/loan;YES;2;83;Alaska
+10/24/2016 6:11:16;106395;2;TRUE;25700;Married;TRUE;Rented;YES;1;32;California
+10/24/2016 6:13:42;106726;2;TRUE;39000;Married;TRUE;Rented;YES;1;53;South Dakota
+10/24/2016 6:14:35;106956;1;TRUE;150600;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;2;50;Oklahoma
+10/24/2016 6:14:50;107458;2;TRUE;182500;Married;TRUE;Homeowner with mortgage/loan;YES;2;66;Florida
+10/24/2016 6:15:22;108042;1;FALSE;6200;Never Married;TRUE;Rented;YES;1;22;Tennessee
+10/24/2016 6:15:54;110024;1;;18960;Widowed;TRUE;Homeowner free and clear;YES;2;83;California
+10/24/2016 6:17:16;110699;2;TRUE;60000;Never Married;TRUE;Homeowner free and clear;YES;1;53;Iowa
+10/24/2016 6:17:57;111870;2;TRUE;26000;Married;FALSE;Homeowner with mortgage/loan;YES;1;54;Maryland
+10/24/2016 6:18:00;112116;2;TRUE;221000;Married;TRUE;Homeowner with mortgage/loan;YES;3;65;Minnesota
+10/24/2016 6:19:21;113390;2;TRUE;25000;Never Married;FALSE;Rented;YES;3;43;Virginia
+10/24/2016 6:20:09;114806;1;TRUE;50000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;2;53;Ohio
+10/24/2016 6:20:09;115100;2;;0;Never Married;FALSE;;NO;;29;California
+10/24/2016 6:20:37;116171;1;;51500;Widowed;TRUE;Homeowner free and clear;YES;1;81;Kansas
+10/24/2016 6:20:41;116481;1;;15900;Divorced/Separated;TRUE;Homeowner free and clear;YES;2;88;Oregon
+10/24/2016 6:21:19;117491;2;TRUE;110000;Married;TRUE;Homeowner with mortgage/loan;YES;4;58;New Jersey
+10/24/2016 6:22:52;117900;2;TRUE;60000;Married;TRUE;Homeowner with mortgage/loan;YES;2;40;Massachusetts
+10/24/2016 6:23:41;117911;2;TRUE;29500;Widowed;TRUE;Rented;YES;2;67;Virginia
+10/24/2016 6:25:10;118561;1;;9600;Widowed;TRUE;Rented;YES;1;60;Texas
+10/24/2016 6:25:56;120705;2;TRUE;21400;Never Married;TRUE;Rented;NO;;30;Tennessee
+10/24/2016 6:26:50;122231;2;TRUE;100000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;2;48;Arkansas
+10/24/2016 6:26:49;124968;1;TRUE;100000;Never Married;TRUE;Homeowner free and clear;YES;1;56;Ohio
+10/24/2016 6:27:52;125155;2;TRUE;18000;Married;FALSE;Rented;YES;1;55;Missouri
+10/24/2016 6:28:01;126507;2;TRUE;112000;Married;TRUE;Homeowner with mortgage/loan;YES;4;51;Florida
+10/24/2016 6:29:30;127965;2;TRUE;90000;Divorced/Separated;TRUE;Homeowner free and clear;YES;1;50;Ohio
+10/24/2016 6:30:38;131301;2;TRUE;16800;Married;FALSE;Rented;YES;2;48;Connecticut
+10/24/2016 6:30:43;133268;2;TRUE;140000;Married;TRUE;Homeowner with mortgage/loan;YES;2;49;Wisconsin
+10/24/2016 6:31:06;136206;1;;3700;Married;TRUE;Homeowner with mortgage/loan;YES;2;56;Alabama
+10/24/2016 6:31:20;138865;2;TRUE;10000;Divorced/Separated;FALSE;Rented;YES;1;28;New York
+10/24/2016 6:31:41;139771;2;TRUE;9600;Married;TRUE;Rented;YES;2;42;California
+10/24/2016 6:31:45;141492;1;;0;Married;TRUE;Homeowner with mortgage/loan;YES;3;34;Florida
+10/24/2016 6:32:00;145172;2;;241000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;83;New Jersey
+10/24/2016 6:33:22;146457;2;TRUE;49000;Never Married;TRUE;Rented;YES;2;35;New Jersey
+10/24/2016 6:33:34;147984;1;;0;Married;TRUE;Rented;YES;1;49;Florida
+10/24/2016 6:34:22;149429;2;TRUE;90000;Never Married;TRUE;Homeowner with mortgage/loan;YES;2;41;California
+10/24/2016 6:35:03;149480;1;;0;Married;FALSE;Homeowner free and clear;YES;2;46;New York
+10/24/2016 6:36:02;150055;1;TRUE;78000;Married;TRUE;Rented;YES;2;24;Virginia
+10/24/2016 6:37:46;150721;2;TRUE;402000;Married;TRUE;Homeowner with mortgage/loan;YES;2;44;California
+10/24/2016 6:38:02;151170;1;TRUE;9000;Divorced/Separated;TRUE;Rented;YES;2;57;India
+10/24/2016 6:38:03;151678;2;;0;Never Married;FALSE;;NO;;34;Georgia
+10/24/2016 6:38:06;151876;1;;18900;Divorced/Separated;TRUE;Rented;YES;1;86;Illinois
+10/24/2016 6:38:39;153419;2;;61400;Married;TRUE;Homeowner with mortgage/loan;YES;3;73;Arizo
+10/24/2016 6:39:10;155762;2;TRUE;60000;Divorced/Separated;FALSE;Homeowner free and clear;YES;2;49;Illinois
+10/24/2016 6:39:32;156520;2;TRUE;75000;Married;TRUE;Homeowner with mortgage/loan;YES;2;40;Illinois
+10/24/2016 6:39:32;158530;2;;1400;Married;TRUE;Homeowner with mortgage/loan;YES;1;83;Texas
+10/24/2016 6:40:00;159107;2;;40000;Widowed;TRUE;Homeowner with mortgage/loan;YES;1;65;New Jersey
+10/24/2016 6:40:13;159573;1;;14400;Widowed;TRUE;Homeowner free and clear;YES;1;69;Kentucky
+10/24/2016 6:41:01;164576;1;;0;Never Married;FALSE;Rented;YES;1;28;Texas
+10/24/2016 6:41:08;166246;1;TRUE;19200;Never Married;TRUE;Rented;YES;1;30;New York
+10/24/2016 6:41:09;167154;2;;0;Never Married;FALSE;;NO;;31;New Jersey
+10/24/2016 6:42:07;167498;2;FALSE;45000;Married;TRUE;Homeowner with mortgage/loan;YES;1;32;Florida
+10/24/2016 6:42:43;169519;1;TRUE;30600;Divorced/Separated;TRUE;Rented;YES;1;62;Virginia
+10/24/2016 6:42:43;173493;2;FALSE;77000;Married;TRUE;Homeowner with mortgage/loan;YES;2;56;Texas
+10/24/2016 6:42:56;174248;2;;29300;Married;TRUE;Homeowner with mortgage/loan;YES;3;68;India
+10/24/2016 6:43:33;175033;2;;269000;Married;TRUE;Homeowner with mortgage/loan;YES;2;47;New York
+10/24/2016 6:44:02;175572;1;FALSE;0;Married;FALSE;Rented;YES;2;38;West Virginia
+10/24/2016 6:44:29;177122;1;TRUE;2000;Married;TRUE;Homeowner with mortgage/loan;YES;1;39;Missouri
+10/24/2016 6:44:31;177145;2;TRUE;60000;Married;TRUE;Homeowner with mortgage/loan;YES;2;46;California
+10/24/2016 6:44:56;178178;1;TRUE;54000;Never Married;TRUE;Rented;YES;1;35;New York
+10/24/2016 6:46:06;178887;1;;0;Married;FALSE;Rented;NO;;44;Illinois
+10/24/2016 6:46:13;179481;1;TRUE;2000;Married;TRUE;Homeowner with mortgage/loan;YES;3;53;Texas
+10/24/2016 6:48:14;180009;2;FALSE;35000;Divorced/Separated;TRUE;Rented;YES;1;31;California
+10/24/2016 6:48:48;181385;1;;290;Married;FALSE;Homeowner free and clear;YES;2;28;Wisconsin
+10/24/2016 6:49:04;181754;2;TRUE;34200;Married;TRUE;Rented;YES;4;49;Massachusetts
+10/24/2016 6:50:20;182072;1;;0;Widowed;FALSE;Rented;YES;1;45;Georgia
+10/24/2016 6:50:45;182146;1;FALSE;40000;Never Married;FALSE;Rented;YES;1;35;Colorado
+10/24/2016 6:51:37;183889;2;TRUE;32000;Married;TRUE;Homeowner with mortgage/loan;YES;1;67;Ohio
+10/24/2016 6:52:37;184170;2;;68800;Married;TRUE;Homeowner free and clear;YES;3;70;Oregon
+10/24/2016 6:52:47;184506;2;TRUE;40000;Divorced/Separated;FALSE;Rented;YES;2;39;Michigan
+10/24/2016 6:52:52;184686;1;TRUE;69000;Divorced/Separated;TRUE;Homeowner free and clear;YES;2;59;Virginia
+10/24/2016 6:53:19;186475;2;TRUE;27000;Never Married;TRUE;Rented;YES;2;29;South Caroli
+10/24/2016 6:53:36;186808;1;;33600;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;4;61;Alaska
+10/24/2016 6:54:54;191018;1;;13200;Married;TRUE;Homeowner free and clear;YES;4;64;India
+10/24/2016 6:55:13;191536;1;;19000;Widowed;TRUE;Rented;NO;;82;Oklahoma
+10/24/2016 6:56:26;194740;1;FALSE;50000;Married;TRUE;Homeowner with mortgage/loan;YES;4;53;Iowa
+10/24/2016 6:57:32;195539;2;;65700;Married;TRUE;Rented;YES;2;69;Florida
+10/24/2016 6:59:36;196613;1;TRUE;77800;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;45;Washington
+10/24/2016 6:59:41;196828;2;TRUE;24800;Married;TRUE;Homeowner with mortgage/loan;YES;3;65;Florida
+10/24/2016 7:00:34;199788;2;FALSE;43500;Never Married;FALSE;Homeowner free and clear;YES;2;37;Louisia
+10/24/2016 7:02:41;203816;1;;0;Married;TRUE;Homeowner with mortgage/loan;YES;2;57;Michigan
+10/24/2016 7:02:47;204591;1;TRUE;47500;Divorced/Separated;TRUE;Rented;YES;3;49;Texas
+10/24/2016 7:03:02;206122;2;TRUE;127000;Married;TRUE;Rented;YES;2;47;Michigan
+10/24/2016 7:03:07;209604;2;TRUE;87000;Married;TRUE;Homeowner free and clear;YES;4;54;Pennsylvania
+10/24/2016 7:03:49;210241;1;TRUE;10000;Never Married;FALSE;Rented;YES;1;29;California
+10/24/2016 7:04:42;210427;2;;12600;Married;TRUE;Homeowner free and clear;YES;3;78;Colorado
+10/24/2016 7:05:33;211330;1;;12200;Divorced/Separated;TRUE;Homeowner free and clear;YES;1;78;Massachusetts
+10/24/2016 7:05:46;211424;2;TRUE;110000;Divorced/Separated;TRUE;Rented;YES;1;50;New York
+10/24/2016 7:05:55;213854;2;;4000;Never Married;TRUE;Rented;NO;;22;Vermont
+10/24/2016 7:06:14;214083;2;;54540;Married;TRUE;Homeowner free and clear;YES;1;73;West Virginia
+10/24/2016 7:06:39;215876;1;;53600;Widowed;TRUE;Rented;NO;;88;Texas
+10/24/2016 7:08:08;217315;2;TRUE;110000;Married;TRUE;Homeowner with mortgage/loan;YES;4;47;Rhode Island
+10/24/2016 7:08:24;218283;1;;20000;Married;TRUE;Homeowner with mortgage/loan;YES;2;37;New York
+10/24/2016 7:09:03;220135;2;TRUE;75000;Divorced/Separated;TRUE;Rented;YES;2;64;California
+10/24/2016 7:10:28;220142;1;;0;Never Married;TRUE;;NO;;18;Arkansas
+10/24/2016 7:11:42;220205;2;TRUE;96000;Never Married;TRUE;Rented;YES;1;38;New Jersey
+10/24/2016 7:12:15;223271;2;FALSE;54000;Married;TRUE;Rented;YES;3;37;California
+10/24/2016 7:13:55;223773;1;;10200;Widowed;TRUE;Rented;YES;1;74;Michigan
+10/24/2016 7:16:54;224356;2;TRUE;60000;Married;TRUE;Homeowner with mortgage/loan;YES;2;60;Virginia
+10/24/2016 7:18:01;226840;2;TRUE;70050;Married;TRUE;Homeowner with mortgage/loan;YES;3;36;New Hampshire
+10/24/2016 7:18:33;227318;2;;30000;Married;TRUE;Homeowner with mortgage/loan;YES;2;69;Connecticut
+10/24/2016 7:18:57;228513;1;TRUE;412000;Widowed;TRUE;Homeowner free and clear;YES;3;47;Maine
+10/24/2016 7:19:07;236067;2;TRUE;140000;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;46;Colorado
+10/24/2016 7:19:12;236880;1;TRUE;6000;Never Married;TRUE;Rented;YES;1;39;Michigan
+10/24/2016 7:21:16;237048;2;FALSE;25000;Married;TRUE;Homeowner free and clear;YES;3;72;Tennessee
+10/24/2016 7:22:19;249492;1;;10100;Widowed;TRUE;;NO;2;93;Georgia
+10/24/2016 7:22:20;250108;1;TRUE;90000;Divorced/Separated;TRUE;Rented;YES;2;31;Illinois
+10/24/2016 7:22:54;251365;1;TRUE;58000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;64;Hawaii
+10/24/2016 7:24:36;252100;2;TRUE;273000;Never Married;TRUE;Homeowner with mortgage/loan;YES;2;52;Virginia
+10/24/2016 7:25:13;253015;2;TRUE;30000;Married;TRUE;Homeowner with mortgage/loan;YES;3;35;California
+10/24/2016 7:25:59;254969;1;TRUE;42200;Divorced/Separated;FALSE;Rented;YES;1;57;India
+10/24/2016 7:26:06;258722;1;;2680;Married;TRUE;Homeowner with mortgage/loan;YES;2;45;Tennessee
+10/24/2016 7:26:31;258948;1;;10820;Widowed;TRUE;Rented;YES;1;85;Kentucky
+10/24/2016 7:26:39;259807;2;;440;Married;TRUE;;NO;;49;West Virginia
+10/24/2016 7:26:40;262234;2;;16000;Married;TRUE;Homeowner free and clear;YES;3;65;Georgia
+10/24/2016 7:26:46;264292;2;TRUE;90000;Married;TRUE;Homeowner with mortgage/loan;NO;;50;Illinois
+10/24/2016 7:26:59;265299;2;;65500;Married;TRUE;Homeowner with mortgage/loan;YES;2;69;Virginia
+10/24/2016 7:27:13;268667;2;;200;Never Married;TRUE;;NO;;31;Pennsylvania
+10/24/2016 7:27:46;269836;1;;22400;Widowed;TRUE;Homeowner with mortgage/loan;YES;1;77;Ohio
+10/24/2016 7:28:06;272748;2;TRUE;60000;Never Married;TRUE;Rented;YES;3;44;Texas
+10/24/2016 7:29:34;274182;2;TRUE;80000;Married;FALSE;Homeowner with mortgage/loan;YES;2;36;Utah
+10/24/2016 7:30:06;276306;2;FALSE;31200;Married;TRUE;Rented;YES;1;29;California
+10/24/2016 7:31:03;277784;1;;15800;Divorced/Separated;TRUE;Rented;YES;1;76;New York
+10/24/2016 7:31:10;278995;1;TRUE;37000;Married;TRUE;Rented;YES;2;38;Texas
+10/24/2016 7:32:34;279538;1;TRUE;62400;Never Married;TRUE;Rented;YES;1;42;India
+10/24/2016 7:32:43;281529;1;;0;Divorced/Separated;FALSE;Homeowner free and clear;YES;3;41;Tennessee
+10/24/2016 7:33:26;283521;1;TRUE;172000;Married;TRUE;Homeowner with mortgage/loan;YES;2;55;Wisconsin
+10/24/2016 7:33:36;283607;2;TRUE;20000;Married;TRUE;Rented;YES;2;41;Tennessee
+10/24/2016 7:33:52;284973;1;FALSE;19000;Divorced/Separated;TRUE;Rented;YES;2;30;Illinois
+10/24/2016 7:33:56;287882;2;TRUE;60000;Married;TRUE;Rented;YES;2;62;Florida
+10/24/2016 7:34:06;291564;1;;28100;Widowed;TRUE;Homeowner free and clear;YES;1;75;New York
+10/24/2016 7:34:22;291599;2;TRUE;45000;Married;TRUE;Rented;YES;2;27;California
+10/24/2016 7:34:43;291608;1;;24700;Widowed;TRUE;Homeowner free and clear;YES;1;79;Georgia
+10/24/2016 7:35:59;297117;2;TRUE;130000;Married;TRUE;Homeowner with mortgage/loan;YES;2;63;Louisia
+10/24/2016 7:36:08;298205;2;TRUE;110450;Married;TRUE;Homeowner with mortgage/loan;YES;2;38;Maryland
+10/24/2016 7:37:56;298782;2;;11200;Widowed;TRUE;;NO;;73;Wisconsin
+10/24/2016 7:38:14;303624;2;TRUE;100000;Married;TRUE;Homeowner with mortgage/loan;YES;1;41;California
+10/24/2016 7:38:44;304200;1;FALSE;0;Divorced/Separated;FALSE;Homeowner with mortgage/loan;YES;1;53;India
+10/24/2016 7:39:44;307655;1;TRUE;31000;Married;TRUE;Rented;YES;3;26;California
+10/24/2016 7:40:10;308107;1;TRUE;1800;Never Married;FALSE;Rented;YES;1;54;West Virginia
+10/24/2016 7:40:29;310588;2;TRUE;110000;Never Married;TRUE;Rented;NO;;40;Florida
+10/24/2016 7:40:31;311095;1;TRUE;42000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;2;51;Kentucky
+10/24/2016 7:40:59;314099;1;;0;Widowed;FALSE;Rented;YES;2;68;Pennsylvania
+10/24/2016 7:41:22;315265;2;;34900;Married;TRUE;Homeowner free and clear;YES;3;82;Illinois
+10/24/2016 7:42:26;316205;1;FALSE;6900;Married;TRUE;Rented;YES;2;25; New York
+10/24/2016 7:42:46;316280;2;TRUE;56000;Divorced/Separated;TRUE;Rented;YES;1;44;Ohio
+10/24/2016 7:42:58;316753;2;TRUE;54000;Married;TRUE;Homeowner with mortgage/loan;YES;2;36;Georgia
+10/24/2016 7:44:18;317166;1;TRUE;86000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;3;54;New Jersey
+10/24/2016 7:44:26;318105;2;TRUE;42200;Divorced/Separated;TRUE;Rented;NO;;54;Texas
+10/24/2016 7:44:46;318348;1;TRUE;40000;Divorced/Separated;FALSE;Homeowner with mortgage/loan;YES;4;55;Iowa
+10/24/2016 7:46:00;319774;2;TRUE;38000;Married;TRUE;Homeowner free and clear;YES;3;49;New Jersey
+10/24/2016 7:46:49;323508;2;TRUE;135000;Never Married;TRUE;Rented;YES;1;27;California
+10/24/2016 7:47:32;324029;1;TRUE;25000;Married;TRUE;Rented;YES;1;37;Georgia
+10/24/2016 7:47:44;330543;1;;3000;Married;TRUE;;NO;;93;Michigan
+10/24/2016 7:48:38;331868;1;;36600;Widowed;TRUE;Homeowner free and clear;YES;2;85;Ohio
+10/24/2016 7:49:09;332292;2;TRUE;61000;Never Married;TRUE;Homeowner with mortgage/loan;YES;3;28;Michigan
+10/24/2016 7:49:19;333355;2;FALSE;22000;Married;TRUE;Rented;YES;2;44;Texas
+10/24/2016 7:49:51;333982;1;;19200;Married;TRUE;Homeowner free and clear;YES;2;72;Washington
+10/24/2016 7:51:22;334135;1;TRUE;200000;Never Married;TRUE;Rented;YES;1;32;Texas
+10/24/2016 7:53:33;335080;2;TRUE;10000;Married;TRUE;Rented;YES;2;28;Wyoming
+10/24/2016 7:54:13;335174;2;;21000;Married;TRUE;Homeowner with mortgage/loan;NO;;76;Pennsylvania
+10/24/2016 7:55:22;337683;1;TRUE;23100;Widowed;TRUE;Rented;YES;1;65;Florida
+10/24/2016 7:56:54;338635;1;TRUE;13200;Never Married;TRUE;Rented;YES;1;21;Georgia
+10/24/2016 7:57:48;341507;2;FALSE;25000;Married;TRUE;Homeowner with mortgage/loan;YES;2;61;New Jersey
+10/24/2016 7:58:22;342460;2;TRUE;45000;Married;TRUE;Rented;YES;1;32;Virginia
+10/24/2016 7:58:34;343235;2;TRUE;24000;Never Married;TRUE;Rented;YES;1;32;Nebraska
+10/24/2016 7:58:49;344685;2;;0;Never Married;TRUE;;NO;;39;Tennessee
+10/24/2016 7:59:47;345994;2;TRUE;177000;Married;TRUE;Homeowner with mortgage/loan;YES;5;48;Illinois
+10/24/2016 7:59:48;348319;1;;0;Married;TRUE;Rented;YES;3;26;India
+10/24/2016 7:59:50;349344;2;TRUE;77000;Married;TRUE;Homeowner with mortgage/loan;YES;4;55;Michigan
+10/24/2016 8:02:38;351129;1;;0;Never Married;TRUE;Rented;YES;2;51;New York
+10/24/2016 8:03:12;352275;1;FALSE;36000;Married;TRUE;Occupied with no rent;YES;3;58;Pennsylvania
+10/24/2016 8:03:28;354269;2;;22000;Never Married;FALSE;Rented;YES;1;29;California
+10/24/2016 8:04:53;356073;2;TRUE;130000;Never Married;TRUE;Rented;YES;1;54;Texas
+10/24/2016 8:05:12;356688;1;TRUE;27000;Never Married;FALSE;Rented;YES;1;26;Iowa
+10/24/2016 8:05:25;356763;2;TRUE;24000;Married;FALSE;Rented;YES;3;48;California
+10/24/2016 8:08:42;359997;1;TRUE;80050;Married;TRUE;Homeowner with mortgage/loan;YES;2;39;Wisconsin
+10/24/2016 8:08:57;360674;2;TRUE;10001;Never Married;TRUE;Rented;YES;2;38;Wisconsin
+10/24/2016 8:11:25;361561;1;;3000;Divorced/Separated;TRUE;Rented;YES;1;26;Florida
+10/24/2016 8:11:50;361946;2;TRUE;90600;Married;TRUE;Homeowner free and clear;YES;2;68;Kentucky
+10/24/2016 8:15:20;361968;2;FALSE;27200;Divorced/Separated;TRUE;Rented;YES;1;68;New York 
+10/24/2016 8:15:44;363008;1;;5400;Married;TRUE;Rented;YES;1;84;Illinois
+10/24/2016 8:16:07;364328;2;TRUE;67000;Married;TRUE;Rented;YES;1;30;Louisia
+10/24/2016 8:17:05;364991;1;;12000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;88;Nevada
+10/24/2016 8:17:16;368645;2;TRUE;83000;Married;TRUE;Homeowner free and clear;YES;2;52;Michigan
+10/24/2016 8:19:55;373976;1;TRUE;27000;Divorced/Separated;TRUE;Rented;YES;1;56;New York
+10/24/2016 8:20:03;374461;2;;58600;Divorced/Separated;TRUE;Rented;YES;1;80;Mississippi
+10/24/2016 8:20:13;374930;2;;0;Married;FALSE;;NO;;55;Maine
+10/24/2016 8:20:15;376508;1;;0;Married;FALSE;Rented;YES;1;42;Iowa
+10/24/2016 8:20:23;382338;2;;21400;Married;TRUE;Homeowner free and clear;YES;1;70;Kansas
+10/24/2016 8:20:32;382614;2;;24800;Never Married;TRUE;;NO;;55;New Jersey
+10/24/2016 8:21:34;382908;1;;30200;Widowed;TRUE;Homeowner with mortgage/loan;YES;2;74;India
+10/24/2016 8:21:45;383409;2;TRUE;15000;Never Married;FALSE;Rented;YES;2;24;India
+10/24/2016 8:22:41;383455;2;TRUE;124000;Never Married;TRUE;Homeowner with mortgage/loan;YES;4;44;Connecticut
+10/24/2016 8:22:42;385318;1;;10800;Widowed;TRUE;Rented;NO;;72;New York
+10/24/2016 8:24:05;388567;1;;14600;Divorced/Separated;TRUE;Rented;YES;1;44;Virginia
+10/24/2016 8:25:24;390273;2;;27100;Married;TRUE;Homeowner free and clear;YES;2;64;India
+10/24/2016 8:26:31;394696;1;;10200;Married;TRUE;Rented;YES;1;58;Wisconsin
+10/24/2016 8:26:41;394790;2;;69040;Married;TRUE;Homeowner with mortgage/loan;YES;3;75;Tennessee
+10/24/2016 8:27:27;395888;2;TRUE;10800;Married;FALSE;Rented;YES;1;29;Pennsylvania
+10/24/2016 8:28:14;396116;1;;0;Married;TRUE;Rented;YES;2;25;South Caroli
+10/24/2016 8:29:32;396256;2;TRUE;36400;Married;FALSE;Homeowner with mortgage/loan;YES;3;34;Minnesota
+10/24/2016 8:29:41;396675;1;TRUE;60000;Never Married;TRUE;Rented;YES;1;45;Illinois
+10/24/2016 8:30:10;397230;1;TRUE;31200;Married;TRUE;Rented;YES;2;55;Texas
+10/24/2016 8:31:11;399150;2;TRUE;50000;Married;TRUE;Homeowner with mortgage/loan;YES;3;38;Florida
+10/24/2016 8:32:16;399930;2;TRUE;55000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;2;42;Florida
+10/24/2016 8:32:25;403690;2;FALSE;34020;Divorced/Separated;FALSE;Homeowner with mortgage/loan;YES;2;50;New York
+10/24/2016 8:34:54;406984;1;;10100;Divorced/Separated;TRUE;Rented;YES;1;71;North Caroli
+10/24/2016 8:35:01;408221;2;TRUE;134800;Married;TRUE;Homeowner with mortgage/loan;YES;3;60;North Caroli
+10/24/2016 8:36:08;409728;2;TRUE;44600;Never Married;FALSE;Homeowner with mortgage/loan;YES;1;50;Illinois
+10/24/2016 8:37:32;411385;2;TRUE;45000;Married;TRUE;Homeowner with mortgage/loan;YES;3;45;Pennsylvania
+10/24/2016 8:37:54;415060;1;FALSE;16000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;60;California
+10/24/2016 8:39:35;415381;2;TRUE;109170;Married;TRUE;Homeowner with mortgage/loan;YES;2;39;New York
+10/24/2016 8:40:37;415575;2;;0;Never Married;TRUE;;NO;;63;Utah
+10/24/2016 8:42:06;415741;2;TRUE;65000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;3;47;New Mexico
+10/24/2016 8:43:05;416144;1;TRUE;82000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;2;44;Ohio
+10/24/2016 8:44:21;416624;1;TRUE;30000;Married;TRUE;Rented;YES;1;43;Texas
+10/24/2016 8:45:42;419751;2;TRUE;95300;Married;TRUE;Homeowner with mortgage/loan;YES;4;57;Texas
+10/24/2016 8:45:53;419951;1;TRUE;12000;Never Married;TRUE;Rented;YES;2;21;Wisconsin
+10/24/2016 8:46:03;421248;2;TRUE;80000;Married;TRUE;Homeowner free and clear;YES;3;58;Nevada
+10/24/2016 8:46:04;421666;2;FALSE;24700;Married;TRUE;Rented;YES;3;54;Idaho
+10/24/2016 8:47:26;423279;2;TRUE;24000;Never Married;TRUE;Rented;YES;3;42;Michigan
+10/24/2016 8:47:28;423910;2;TRUE;192000;Married;TRUE;Homeowner with mortgage/loan;YES;4;58;Ohio
+10/24/2016 8:48:27;426154;1;;10200;Divorced/Separated;TRUE;Rented;NO;;76;India
+10/24/2016 8:49:09;427431;1;;7900;Divorced/Separated;TRUE;Rented;NO;;45;California
+10/24/2016 8:49:16;427589;1;TRUE;40000;Divorced/Separated;TRUE;Rented;YES;1;54;California
+10/24/2016 8:50:08;430516;1;;20000;Widowed;TRUE;Homeowner free and clear;YES;1;81;Maine
+10/24/2016 8:50:33;431729;2;;26700;Married;TRUE;Homeowner with mortgage/loan;YES;2;75;Pennsylvania
+10/24/2016 8:50:34;432526;1;;7300;Married;TRUE;Homeowner with mortgage/loan;YES;2;44;West Virginia
+10/24/2016 8:51:17;433755;1;;60000;Widowed;TRUE;Homeowner with mortgage/loan;YES;3;85;Pennsylvania
+10/24/2016 8:51:39;435651;1;;10800;Divorced/Separated;TRUE;Rented;YES;1;63;Pennsylvania
+10/24/2016 8:52:24;438304;2;FALSE;9700;Married;TRUE;Rented;YES;1;77;Utah
+10/24/2016 8:52:45;439284;1;TRUE;1100;Never Married;TRUE;Rented;YES;1;32;Kentucky
+10/24/2016 8:53:44;440475;2;TRUE;35000;Married;TRUE;Homeowner free and clear;YES;2;49;New Hampshire
+10/24/2016 8:53:46;441221;2;TRUE;93500;Never Married;TRUE;Rented;NO;;25;New York
+10/24/2016 8:54:49;442608;2;TRUE;34000;Never Married;TRUE;Homeowner with mortgage/loan;YES;4;23;Kentucky
+10/24/2016 8:54:56;445622;1;;0;Never Married;TRUE;Rented;YES;2;48;Texas
+10/24/2016 8:55:58;445937;1;;69900;Widowed;TRUE;Rented;YES;1;86;Georgia
+10/24/2016 8:55:59;445985;2;TRUE;43000;Married;TRUE;Homeowner with mortgage/loan;YES;1;56;Texas
+10/24/2016 8:56:03;449907;2;TRUE;48000;Married;TRUE;Homeowner with mortgage/loan;YES;4;42;Minnesota
+10/24/2016 8:56:20;450221;2;TRUE;15800;Married;FALSE;Homeowner with mortgage/loan;YES;2;64;Washington
+10/24/2016 8:56:32;450776;1;TRUE;14900;Divorced/Separated;FALSE;Rented;YES;1;33;Florida
+10/24/2016 8:56:58;456859;2;TRUE;80;Never Married;TRUE;;NO;;18;California
+10/24/2016 8:58:06;458094;1;;0;Divorced/Separated;TRUE;Rented;YES;1;41;Michigan
+10/24/2016 8:58:10;458212;2;TRUE;170000;Married;TRUE;Homeowner with mortgage/loan;YES;2;34;Texas
+10/24/2016 8:58:48;458265;2;TRUE;15000;Married;TRUE;Homeowner free and clear;YES;1;58;Massachusetts
+10/24/2016 8:59:01;459429;1;TRUE;60000;Married;TRUE;Rented;YES;3;38;Illinois
+10/24/2016 9:00:40;459910;2;;56300;Married;TRUE;Homeowner free and clear;YES;1;93;California
+10/24/2016 9:01:47;459959;1;;13300;Widowed;TRUE;;NO;;68;Virginia
+10/24/2016 9:03:09;460642;1;TRUE;99670;Divorced/Separated;TRUE;Rented;YES;1;44;Alaska
+10/24/2016 9:03:30;460925;1;;31300;Married;TRUE;Homeowner free and clear;YES;1;72;Michigan
+10/24/2016 9:03:38;461021;1;FALSE;9600;Widowed;TRUE;Rented;YES;2;64;Pennsylvania
+10/24/2016 9:04:12;461429;2;;12400;Married;TRUE;Rented;YES;2;81;West Virginia
+10/24/2016 9:04:38;462569;2;;22000;Widowed;TRUE;Homeowner free and clear;NO;;89;Iowa
+10/24/2016 9:05:16;463808;1;TRUE;90000;Married;TRUE;Homeowner with mortgage/loan;YES;3;46;Texas
+10/24/2016 9:06:18;464082;1;;0;Married;FALSE;Rented;YES;2;26;Georgia
+10/24/2016 9:06:35;465818;1;FALSE;0;Married;FALSE;Homeowner with mortgage/loan;YES;3;33;India
+10/24/2016 9:07:29;467335;2;TRUE;42600;Never Married;FALSE;Rented;YES;1;33;Nebraska
+10/24/2016 9:07:39;468344;1;TRUE;35000;Never Married;TRUE;Homeowner with mortgage/loan;YES;2;28;North Caroli
+10/24/2016 9:07:45;468553;2;TRUE;40000;Never Married;TRUE;Rented;YES;2;32;Florida
+10/24/2016 9:07:59;474507;1;TRUE;3000;Married;TRUE;Homeowner with mortgage/loan;YES;3;52;California
+10/24/2016 9:08:48;478228;2;;98900;Married;TRUE;Homeowner with mortgage/loan;YES;4;64;New York
+10/24/2016 9:10:32;478502;2;TRUE;90000;Married;FALSE;Rented;YES;1;62;Tennessee
+10/24/2016 9:10:37;479327;1;TRUE;6400;Divorced/Separated;TRUE;Rented;YES;2;37;Colorado
+10/24/2016 9:13:27;482611;2;TRUE;50000;Married;TRUE;Rented;NO;;24;Virginia
+10/24/2016 9:13:43;487124;2;TRUE;2000;Married;FALSE;Rented;YES;2;54;Ohio
+10/24/2016 9:14:33;487369;1;FALSE;22000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;48;Maryland
+10/24/2016 9:15:35;487556;2;TRUE;94700;Married;TRUE;Homeowner with mortgage/loan;YES;2;55;Delaware
+10/24/2016 9:16:12;489718;2;;0;Never Married;TRUE;Rented;NO;;21;New Jersey
+10/24/2016 9:21:17;491280;2;;127000;Married;TRUE;Homeowner with mortgage/loan;YES;3;61;Iowa
+10/24/2016 9:21:19;491389;1;;10000;Married;TRUE;Homeowner free and clear;YES;2;51;Illinois
+10/24/2016 9:23:28;491848;1;;16700;Widowed;TRUE;Rented;YES;1;84;Florida
+10/24/2016 9:23:20;492072;1;TRUE;80000;Married;TRUE;Homeowner with mortgage/loan;YES;4;49;New Mexico
+10/24/2016 9:23:48;492789;1;;0;Married;TRUE;Homeowner with mortgage/loan;YES;2;60;Massachusetts
+10/24/2016 9:24:11;496465;2;;0;Divorced/Separated;FALSE;;NO;;45;Florida
+10/24/2016 9:25:33;497970;1;TRUE;48000;Married;TRUE;Homeowner with mortgage/loan;YES;2;30;Missouri
+10/24/2016 9:25:44;498048;2;TRUE;95000;Married;TRUE;Homeowner with mortgage/loan;YES;2;60;Pennsylvania
+10/24/2016 9:25:48;499492;2;;15400;Never Married;TRUE;Homeowner free and clear;YES;1;54;California
+10/24/2016 9:25:49;499637;1;;12000;Never Married;TRUE;;NO;;93;Florida
+10/24/2016 9:26:58;499807;2;TRUE;125000;Married;TRUE;Homeowner with mortgage/loan;YES;3;43;Massachusetts
+10/24/2016 9:27:30;501259;2;TRUE;90000;Married;TRUE;Homeowner with mortgage/loan;YES;2;56;Oklahoma
+10/24/2016 9:29:37;502705;2;TRUE;70000;Married;FALSE;Rented;YES;4;37;Illinois
+10/24/2016 9:30:47;502764;1;TRUE;71000;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;47;Michigan
+10/24/2016 9:31:09;503412;2;TRUE;16000;Never Married;TRUE;;NO;;21;California
+10/24/2016 9:31:09;504889;2;FALSE;17300;Married;FALSE;Homeowner with mortgage/loan;YES;2;40;Michigan
+10/24/2016 9:31:55;505318;1;TRUE;26400;Divorced/Separated;TRUE;Rented;YES;1;36;Virginia
+10/24/2016 9:32:15;506042;2;TRUE;130100;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;51;Michigan
+10/24/2016 9:32:56;509386;1;;0;Never Married;TRUE;;NO;;85;New Jersey
+10/24/2016 9:34:56;510349;1;;23600;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;78;North Caroli
+10/24/2016 9:35:10;510555;2;TRUE;30000;Divorced/Separated;FALSE;Rented;YES;2;47;Texas
+10/24/2016 9:36:11;511732;1;;0;Never Married;FALSE;;NO;;32;Ohio
+10/24/2016 9:36:31;512594;1;TRUE;30900;Married;TRUE;Homeowner with mortgage/loan;YES;3;36;California
+10/24/2016 9:38:10;516129;1;TRUE;48000;Never Married;FALSE;Rented;YES;2;45;Texas
+10/24/2016 9:38:27;517253;2;TRUE;141000;Married;TRUE;Homeowner with mortgage/loan;YES;2;60;New York
+10/24/2016 9:39:02;517696;1;;6300;Married;TRUE;Homeowner free and clear;YES;2;56;California
+10/24/2016 9:39:03;518076;1;;40600;Widowed;TRUE;Homeowner free and clear;YES;2;73;North Caroli
+10/24/2016 9:40:09;518899;2;TRUE;148000;Married;TRUE;Homeowner with mortgage/loan;YES;3;49;Nevada
+10/24/2016 9:40:52;519446;1;;19500;Divorced/Separated;TRUE;Rented;NO;;70;New Jersey
+10/24/2016 9:43:26;520030;2;TRUE;49000;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;66;Kansas
+10/24/2016 9:45:35;520390;1;TRUE;180000;Married;TRUE;Homeowner with mortgage/loan;YES;2;51;South Dakota
+10/24/2016 9:45:36;523769;1;TRUE;42220;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;43;Georgia
+10/24/2016 9:45:36;523990;1;TRUE;90000;Never Married;TRUE;Rented;YES;1;31;Michigan
+10/24/2016 9:47:47;525942;1;;10400;Divorced/Separated;TRUE;Rented;NO;;78;New Jersey
+10/24/2016 9:48:28;527928;1;TRUE;93300;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;43;Colorado
+10/24/2016 9:49:43;528994;2;;0;Divorced/Separated;FALSE;;NO;;44;California
+10/24/2016 9:50:38;532940;2;TRUE;62000;Married;TRUE;Homeowner with mortgage/loan;YES;2;33;Washington
+10/24/2016 9:50:58;532971;2;TRUE;39000;Married;TRUE;Rented;YES;2;33;Nebraska
+10/24/2016 9:51:16;535114;1;;0;Married;FALSE;Homeowner with mortgage/loan;YES;1;50;Wisconsin
+10/24/2016 9:51:59;536463;2;TRUE;399900;Married;TRUE;Homeowner free and clear;YES;2;68;Louisia
+10/24/2016 9:53:35;536879;2;;0;Married;TRUE;Homeowner with mortgage/loan;YES;3;53;California
+10/24/2016 9:53:41;537484;1;TRUE;28000;Married;TRUE;Homeowner with mortgage/loan;YES;3;51;Illinois
+10/24/2016 9:56:56;540956;1;TRUE;13000;Never Married;FALSE;Rented;NO;;49;New York
+10/24/2016 9:57:17;542384;1;;0;Married;FALSE;Rented;YES;2;57;Ohio
+10/24/2016 10:02:16;543309;2;;10500;Never Married;TRUE;Rented;NO;;44;New Jersey
+10/24/2016 10:02:44;545826;1;;20300;Divorced/Separated;TRUE;Rented;NO;;78;Louisia
+10/24/2016 10:03:34;546208;2;;26000;Divorced/Separated;TRUE;;NO;;40;India
+10/24/2016 10:04:45;547258;2;FALSE;0;Married;TRUE;Rented;YES;2;53;Massachusetts
+10/24/2016 10:05:02;548303;2;;26700;Widowed;TRUE;Homeowner free and clear;NO;;63;Illinois
+10/24/2016 10:06:13;549068;2;TRUE;75100;Married;TRUE;Homeowner with mortgage/loan;YES;2;42;Louisia
+10/24/2016 10:06:19;550733;1;TRUE;35020;Never Married;TRUE;Rented;YES;1;30;California
+10/24/2016 10:06:37;551584;2;TRUE;20000;Married;TRUE;Homeowner free and clear;YES;1;40;New Jersey
+10/24/2016 10:07:07;556935;1;TRUE;120000;Married;TRUE;Homeowner with mortgage/loan;YES;3;60;Hawaii
+10/24/2016 10:13:12;559163;2;;47000;Married;TRUE;Homeowner with mortgage/loan;YES;2;70;Michigan
+10/24/2016 10:13:52;559955;2;;0;Never Married;FALSE;;NO;;36;South Caroli
+10/24/2016 10:14:51;560007;1;TRUE;100030;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;2;45;India
+10/24/2016 10:17:30;560783;1;;0;Never Married;TRUE;;NO;;37;Hawaii
+10/24/2016 10:18:06;561588;1;TRUE;60000;Married;TRUE;Homeowner with mortgage/loan;YES;4;54;New York
+10/24/2016 10:20:51;562962;2;;0;Married;TRUE;Homeowner with mortgage/loan;YES;3;55;Pennsylvania
+10/24/2016 10:21:02;565628;1;TRUE;15000;Married;TRUE;Homeowner with mortgage/loan;YES;2;58;Arizona
+10/24/2016 10:24:13;565740;1;TRUE;44200;Never Married;TRUE;Homeowner with mortgage/loan;YES;3;34;India
+10/24/2016 10:25:55;568892;1;;9600;Widowed;TRUE;Rented;NO;;86;Louisia
+10/24/2016 10:26:02;569414;1;TRUE;50600;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;57;Missouri
+10/24/2016 10:26:51;571834;1;FALSE;19200;Never Married;TRUE;Rented;YES;1;29;North Caroli
+10/24/2016 10:27:56;572341;1;TRUE;16000;Divorced/Separated;TRUE;Rented;YES;1;36;Alabama
+10/24/2016 10:28:35;573573;2;TRUE;30000;Never Married;TRUE;Rented;YES;2;28;South Dakota
+10/24/2016 10:30:06;575660;1;TRUE;28000;Never Married;FALSE;Rented;YES;1;24;Missouri
+10/24/2016 10:30:18;576799;1;TRUE;76600;Never Married;TRUE;Homeowner with mortgage/loan;YES;4;47;California
+10/24/2016 10:32:04;578596;2;TRUE;143100;Married;TRUE;Homeowner free and clear;YES;4;66;Massachusetts
+10/24/2016 10:33:47;580304;1;TRUE;32000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;2;52;Pennsylvania
+10/24/2016 10:34:05;581657;1;;7500;Widowed;TRUE;Homeowner free and clear;YES;1;83;Nebraska
+10/24/2016 10:36:47;583093;2;TRUE;16000;Never Married;TRUE;Rented;YES;2;48;Florida
+10/24/2016 10:37:17;583249;1;TRUE;15000;Never Married;TRUE;Rented;YES;2;59;Illinois
+10/24/2016 10:37:25;583934;1;;24000;Widowed;TRUE;Homeowner free and clear;YES;2;69;Pennsylvania
+10/24/2016 10:40:23;584570;2;TRUE;22000;Married;TRUE;Rented;YES;1;38;Washington
+10/24/2016 10:40:50;588705;2;;9600;Married;TRUE;Homeowner with mortgage/loan;YES;1;84;California
+10/24/2016 10:41:50;588711;1;FALSE;58000;Married;TRUE;Homeowner with mortgage/loan;YES;2;57;Arkansas
+10/24/2016 10:42:47;589826;1;TRUE;105000;Never Married;TRUE;Rented;YES;1;30;Pennsylvania
+10/24/2016 10:43:39;591244;2;;72600;Never Married;TRUE;Homeowner free and clear;YES;2;58;Wisconsin
+10/24/2016 10:44:06;592496;2;TRUE;10700;Divorced/Separated;TRUE;Rented;YES;1;60;Texas
+10/24/2016 10:45:39;595225;2;TRUE;39200;Married;TRUE;Homeowner with mortgage/loan;YES;4;51;Virginia
+10/24/2016 10:47:47;595796;2;;93400;Married;TRUE;Homeowner free and clear;YES;2;82;Illinois
+10/24/2016 10:48:48;595944;1;TRUE;59500;Never Married;TRUE;Homeowner free and clear;YES;1;63;Georgia
+10/24/2016 10:51:14;596523;1;TRUE;80000;Divorced/Separated;TRUE;Rented;YES;1;31;Pennsylvania
+10/24/2016 10:51:36;597817;1;;12500;Widowed;TRUE;Rented;YES;1;80;Utah
+10/24/2016 10:52:24;598008;2;TRUE;388000;Married;TRUE;Homeowner with mortgage/loan;YES;2;51;New Jersey
+10/24/2016 10:54:04;601247;2;;93500;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;3;73;Georgia
+10/24/2016 10:55:04;601778;1;TRUE;10100;Widowed;FALSE;Homeowner with mortgage/loan;YES;1;63;New Jersey
+10/24/2016 10:55:07;603304;2;TRUE;382000;Married;TRUE;Rented;YES;2;44;India
+10/24/2016 10:55:16;604216;2;;16500;Divorced/Separated;FALSE;;NO;;42;Pennsylvania
+10/24/2016 10:57:45;604839;2;TRUE;150000;Never Married;TRUE;Rented;YES;2;25;Texas
+10/24/2016 10:58:47;605624;1;TRUE;60000;Married;TRUE;Homeowner with mortgage/loan;YES;3;48;Michigan
+10/24/2016 11:00:43;606108;1;TRUE;66000;Never Married;TRUE;Rented;YES;1;45;New Jersey
+10/24/2016 11:01:11;606307;2;TRUE;120000;Married;TRUE;Homeowner with mortgage/loan;YES;2;38;Wisconsin
+10/24/2016 11:01:18;607766;1;TRUE;19000;Never Married;TRUE;Rented;YES;1;49;California
+10/24/2016 11:01:39;608789;2;;15000;Divorced/Separated;TRUE;;NO;;58;Pennsylvania
+10/24/2016 11:03:12;609449;1;;53010;Widowed;TRUE;Homeowner free and clear;YES;2;83;India
+10/24/2016 11:03:18;612775;2;TRUE;150000;Married;TRUE;Homeowner with mortgage/loan;YES;2;34;Texas
+10/24/2016 11:03:56;612779;1;TRUE;382000;Married;TRUE;Homeowner with mortgage/loan;YES;2;49;Louisia
+10/24/2016 11:04:39;613391;2;TRUE;6000;Married;TRUE;Rented;YES;2;23;Ohio
+10/24/2016 11:05:28;616498;2;TRUE;30000;Never Married;FALSE;Rented;YES;4;52;Vermont
+10/24/2016 11:05:43;618036;2;FALSE;38200;Never Married;FALSE;Rented;YES;2;41;Wisconsin
+10/24/2016 11:06:21;618059;1;;15800;Widowed;TRUE;Occupied with no rent;YES;2;89;South Caroli
+10/24/2016 11:06:42;618500;1;TRUE;8450;Married;TRUE;Rented;YES;3;64;Pennsylvania
+10/24/2016 11:07:24;620116;1;TRUE;28000;Married;TRUE;Rented;YES;2;26;Alabama
+10/24/2016 11:07:43;620452;2;FALSE;17000;Married;FALSE;Homeowner with mortgage/loan;YES;1;46;Ohio
+10/24/2016 11:09:01;622713;1;TRUE;40000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;4;44;Pennsylvania
+10/24/2016 11:10:02;624593;2;TRUE;285000;Married;TRUE;Homeowner with mortgage/loan;YES;2;54;Illinois
+10/24/2016 11:10:17;628305;2;;24400;Married;TRUE;;NO;;93;California
+10/24/2016 11:14:32;634710;1;TRUE;5000;Never Married;TRUE;Homeowner with mortgage/loan;YES;2;54;Minnesota
+10/24/2016 11:15:39;635515;1;TRUE;120000;Divorced/Separated;TRUE;Rented;YES;1;51;California
+10/24/2016 11:16:21;635574;2;TRUE;70000;Never Married;TRUE;Rented;YES;2;32;India
+10/24/2016 11:17:06;638458;1;;8000;Never Married;FALSE;Rented;NO;;43;Virginia
+10/24/2016 11:17:54;638760;2;FALSE;20000;Married;FALSE;Homeowner free and clear;YES;1;33;Pennsylvania
+10/24/2016 11:18:27;642727;1;TRUE;48000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;58;Illinois
+10/24/2016 11:18:40;643754;2;TRUE;70000;Married;TRUE;Homeowner with mortgage/loan;YES;2;54;New Jersey
+10/24/2016 11:19:06;645268;2;TRUE;29000;Married;TRUE;Homeowner with mortgage/loan;YES;3;88;Washington
+10/24/2016 11:19:55;646061;1;;11500;Widowed;TRUE;Rented;YES;2;54;Monta
+10/24/2016 11:21:18;646808;2;TRUE;36000;Married;TRUE;Rented;NO;;40;New Jersey
+10/24/2016 11:21:49;647206;2;TRUE;65000;Married;FALSE;Homeowner with mortgage/loan;YES;4;47;Florida
+10/24/2016 11:22:30;648220;2;TRUE;20000;Married;TRUE;Homeowner with mortgage/loan;YES;3;51;Ohio
+10/24/2016 11:23:29;649827;1;;5500;Married;TRUE;;NO;;89;New York
+10/24/2016 11:25:59;650803;2;TRUE;61000;Married;TRUE;Homeowner with mortgage/loan;YES;3;40;Massachusetts
+10/24/2016 11:30:48;650961;1;TRUE;60000;Never Married;TRUE;Rented;YES;1;38;California
+10/24/2016 11:31:58;655940;1;TRUE;35780;Widowed;TRUE;Homeowner with mortgage/loan;YES;2;62;Florida
+10/24/2016 11:32:04;661353;1;;180704;Married;TRUE;Homeowner with mortgage/loan;YES;2;64;Illinois
+10/24/2016 11:32:49;665669;1;TRUE;38000;Never Married;TRUE;Rented;YES;4;33;Pennsylvania
+10/24/2016 11:32:52;667156;1;TRUE;40000;Married;TRUE;Rented;YES;1;46;New York
+10/24/2016 11:35:28;668199;2;TRUE;160000;Married;TRUE;Homeowner with mortgage/loan;YES;2;45;Colorado
+10/24/2016 11:41:57;668750;1;;1200;Never Married;FALSE;;NO;;24;Texas
+10/24/2016 11:42:31;668777;2;;0;Never Married;FALSE;;NO;;33;Wisconsin
+10/24/2016 11:43:22;673010;2;TRUE;63000;Married;TRUE;Rented;YES;1;46;Illinois
+10/24/2016 11:48:15;674271;2;FALSE;0;Married;TRUE;Rented;YES;1;54;Massachusetts
+10/24/2016 11:48:50;679084;2;;29200;Married;TRUE;Homeowner with mortgage/loan;YES;1;88;Minnesota
+10/24/2016 11:49:47;679364;1;FALSE;22800;Married;TRUE;Homeowner free and clear;YES;2;55;California
+10/24/2016 11:52:23;680475;2;TRUE;2000;Never Married;TRUE;;NO;;21;Ohio
+10/24/2016 11:54:14;680503;2;TRUE;110010;Never Married;TRUE;Rented;YES;1;33;New Jersey
+10/24/2016 11:54:32;682848;1;TRUE;59000;Widowed;TRUE;Rented;NO;;58;Oregon
+10/24/2016 11:54:45;683320;1;TRUE;70200;Married;TRUE;Homeowner with mortgage/loan;YES;3;32;Pennsylvania
+10/24/2016 11:56:27;683867;2;TRUE;82000;Married;TRUE;Homeowner with mortgage/loan;YES;2;62;Oklahoma
+10/24/2016 11:56:47;684640;2;TRUE;18200;Divorced/Separated;TRUE;Rented;YES;1;70;Maryland
+10/24/2016 11:57:49;684701;2;;12600;Widowed;FALSE;Homeowner with mortgage/loan;YES;3;63;Iowa
+10/24/2016 11:58:12;685624;2;TRUE;16000;Married;TRUE;Homeowner with mortgage/loan;YES;2;45;California
+10/24/2016 11:58:20;685994;1;TRUE;21100;Married;FALSE;Homeowner free and clear;YES;2;63;Maryland
+10/24/2016 11:59:28;688580;2;TRUE;48000;Married;TRUE;Rented;YES;2;22;Florida
+10/24/2016 12:00:24;688736;1;;0;Married;TRUE;Rented;YES;2;34;Iowa
+10/24/2016 12:02:11;692445;2;TRUE;140000;Married;TRUE;Homeowner with mortgage/loan;YES;5;48;Illinois
+10/24/2016 12:02:25;693235;2;TRUE;36200;Married;TRUE;Homeowner free and clear;YES;2;43;Michigan
+10/24/2016 12:03:16;693571;1;;0;Married;FALSE;Homeowner with mortgage/loan;YES;2;44;Michigan
+10/24/2016 12:04:23;696895;2;TRUE;30000;Married;FALSE;Homeowner with mortgage/loan;YES;2;44;Tennessee
+10/24/2016 12:08:21;699499;2;TRUE;65000;Never Married;TRUE;Rented;YES;2;29;North Caroli
+10/24/2016 12:11:18;702348;1;;3000;Married;TRUE;Rented;YES;4;20;Texas
+10/24/2016 12:12:37;702740;2;TRUE;104000;Married;TRUE;Homeowner with mortgage/loan;YES;2;35;New York
+10/24/2016 12:12:42;705752;1;TRUE;34300;Widowed;TRUE;Rented;YES;1;71;Massachusetts
+10/24/2016 12:14:06;706135;2;TRUE;120000;Married;TRUE;Homeowner free and clear;YES;2;41;South Caroli
+10/24/2016 12:15:42;711954;1;TRUE;103500;Married;TRUE;Homeowner with mortgage/loan;YES;2;44;Pennsylvania
+10/24/2016 12:15:58;712409;2;TRUE;35000;Married;TRUE;Homeowner with mortgage/loan;YES;4;41;California
+10/24/2016 12:17:19;714135;1;TRUE;56200;Never Married;TRUE;Rented;YES;1;40;New Mexico
+10/24/2016 12:21:51;715902;1;TRUE;160000;Married;TRUE;Rented;YES;4;51;New York
+10/24/2016 12:22:14;716518;2;TRUE;35050;Married;FALSE;Homeowner with mortgage/loan;YES;3;44;New York
+10/24/2016 12:22:55;716521;2;TRUE;16100;Married;FALSE;Rented;YES;2;62;Louisia
+10/24/2016 12:22:57;719883;2;TRUE;21600;Never Married;FALSE;Rented;YES;1;30;Illinois
+10/24/2016 12:23:09;721921;2;TRUE;32000;Married;TRUE;Rented;YES;3;39;Illinois
+10/24/2016 12:24:14;723040;2;TRUE;120190;Married;TRUE;Homeowner free and clear;YES;2;54;New York
+10/24/2016 12:24:26;724575;1;TRUE;100200;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;56;Massachusetts
+10/24/2016 12:26:32;726057;1;TRUE;53000;Married;TRUE;Rented;YES;5;52;California
+10/24/2016 12:30:49;728498;2;TRUE;120000;Married;TRUE;Homeowner with mortgage/loan;YES;1;52;South Caroli
+10/24/2016 12:33:34;733069;1;;48400;Married;TRUE;Homeowner free and clear;YES;1;45;Michigan
+10/24/2016 12:33:43;733279;2;TRUE;9600;Married;FALSE;Rented;NO;;52;Ohio
+10/24/2016 12:34:25;733457;1;;10000;Divorced/Separated;TRUE;Rented;NO;;86;Texas
+10/24/2016 12:35:36;735845;2;TRUE;54000;Married;TRUE;Homeowner free and clear;YES;1;76;California
+10/24/2016 12:36:25;737283;2;;0;Married;FALSE;Homeowner with mortgage/loan;YES;2;61;Michigan
+10/24/2016 12:38:57;739344;2;;127500;Widowed;TRUE;Homeowner free and clear;YES;5;75;Kentucky
+10/24/2016 12:39:25;739654;2;TRUE;45600;Married;TRUE;Homeowner with mortgage/loan;YES;3;50;Pennsylvania
+10/24/2016 12:40:05;743329;2;TRUE;100600;Married;TRUE;Homeowner with mortgage/loan;YES;2;39;Michigan
+10/24/2016 12:43:05;743605;1;TRUE;23400;Never Married;TRUE;Rented;YES;2;28;Pennsylvania
+10/24/2016 12:45:26;748153;1;TRUE;34200;Divorced/Separated;TRUE;Homeowner free and clear;YES;1;58;New York
+10/24/2016 12:50:06;750282;2;;8900;Married;TRUE;Occupied with no rent;YES;1;89;Pennsylvania
+10/24/2016 12:50:37;752338;2;TRUE;285000;Divorced/Separated;FALSE;Rented;YES;2;34;California
+10/24/2016 12:52:52;755587;2;TRUE;38080;Married;TRUE;Homeowner with mortgage/loan;YES;2;55;Pennsylvania
+10/24/2016 12:53:58;756099;2;TRUE;70504;Married;TRUE;Homeowner with mortgage/loan;YES;1;62;Wisconsin
+10/24/2016 12:56:16;756667;1;TRUE;6300;Married;TRUE;Rented;YES;2;45;Pennsylvania
+10/24/2016 12:56:55;756752;2;TRUE;17300;Never Married;FALSE;Rented;YES;2;29;Pennsylvania
+10/24/2016 12:56:59;756892;2;;53000;Married;TRUE;Homeowner with mortgage/loan;YES;2;68;Kentucky
+10/24/2016 12:57:37;757404;2;TRUE;22000;Married;TRUE;Homeowner with mortgage/loan;YES;3;35;West Virginia
+10/24/2016 12:58:52;761350;2;TRUE;79100;Married;TRUE;Homeowner with mortgage/loan;YES;2;50;New Jersey
+10/24/2016 13:00:41;761380;2;TRUE;71800;Married;TRUE;Rented;YES;2;34;Pennsylvania
+10/24/2016 13:00:51;761424;2;TRUE;90000;Married;TRUE;Homeowner free and clear;YES;2;39;Washington
+10/24/2016 13:01:16;763255;2;TRUE;18000;Never Married;TRUE;Rented;YES;1;23;Minnesota
+10/24/2016 13:02:52;766390;2;;2100;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;2;86;Florida
+10/24/2016 13:03:29;768162;2;TRUE;190000;Married;TRUE;Homeowner with mortgage/loan;YES;2;57;California
+10/24/2016 13:04:45;773461;1;TRUE;100000;Married;TRUE;Homeowner with mortgage/loan;YES;4;52;California
+10/24/2016 13:05:40;773582;1;;27200;Widowed;TRUE;Homeowner free and clear;YES;2;74;California
+10/24/2016 13:08:55;774920;2;TRUE;71000;Never Married;TRUE;Homeowner with mortgage/loan;YES;4;43;Virginia
+10/24/2016 13:10:15;776005;1;TRUE;5500;Never Married;TRUE;Homeowner with mortgage/loan;YES;3;48;California
+10/24/2016 13:11:46;776265;1;TRUE;110000;Never Married;TRUE;Homeowner free and clear;YES;3;49;Michigan
+10/24/2016 13:12:30;776471;2;;39900;Married;TRUE;Homeowner with mortgage/loan;YES;1;64;Michigan
+10/24/2016 13:12:56;778092;2;TRUE;60000;Married;TRUE;Homeowner with mortgage/loan;YES;3;38;New York
+10/24/2016 13:13:49;778821;2;;23500;Widowed;TRUE;Homeowner free and clear;YES;2;79;Washington
+10/24/2016 13:14:09;779164;2;TRUE;45000;Married;TRUE;Homeowner with mortgage/loan;YES;3;32;California
+10/24/2016 13:16:24;782988;2;TRUE;110000;Married;TRUE;Homeowner with mortgage/loan;YES;3;53;Ohio
+10/24/2016 13:16:49;786358;2;TRUE;60000;Married;TRUE;Homeowner with mortgage/loan;YES;4;56;Illinois
+10/24/2016 13:17:17;789913;2;TRUE;30300;Married;TRUE;Rented;YES;2;68;California
+10/24/2016 13:17:23;792130;1;;30000;Never Married;TRUE;Homeowner free and clear;YES;1;72;Wisconsin
+10/24/2016 13:17:37;795198;1;FALSE;23800;Married;TRUE;Rented;YES;2;31;Florida
+10/24/2016 13:18:43;799074;1;;56500;Married;TRUE;Homeowner free and clear;YES;3;74;Alabama
+10/24/2016 13:21:03;799565;2;;1600;Never Married;FALSE;;NO;;23;Pennsylvania
+10/24/2016 13:22:31;800960;2;;258000;Married;TRUE;Homeowner with mortgage/loan;YES;2;68;Florida
+10/24/2016 13:23:59;801018;1;;45000;Married;TRUE;Homeowner with mortgage/loan;YES;2;64;South Caroli
+10/24/2016 13:24:22;805224;1;TRUE;56000;Never Married;TRUE;Rented;YES;1;33;North Caroli
+10/24/2016 13:27:56;805571;2;TRUE;100000;Married;TRUE;Homeowner with mortgage/loan;YES;2;41;Wisconsin
+10/24/2016 13:35:28;809267;2;TRUE;91500;Married;TRUE;Homeowner with mortgage/loan;YES;2;62;Illinois
+10/24/2016 13:36:18;811443;1;TRUE;10200;Never Married;FALSE;Homeowner with mortgage/loan;YES;1;26;Colorado
+10/24/2016 13:39:16;814516;1;TRUE;36000;Divorced/Separated;TRUE;Rented;YES;1;27;Wisconsin
+10/24/2016 13:40:26;814627;2;TRUE;38000;Never Married;TRUE;Rented;NO;;24;Michigan
+10/24/2016 13:42:26;816773;2;TRUE;200000;Married;TRUE;Rented;YES;2;50;Michigan
+10/24/2016 13:42:35;816872;2;;41000;Married;TRUE;Homeowner with mortgage/loan;YES;2;72;Wisconsin
+10/24/2016 13:47:50;818228;2;;25750;Widowed;TRUE;Homeowner with mortgage/loan;YES;2;73;Wisconsin
+10/24/2016 13:48:02;819436;1;;56800;Widowed;TRUE;Homeowner with mortgage/loan;YES;1;81;Pennsylvania
+10/24/2016 13:49:28;819585;2;TRUE;36000;Never Married;FALSE;Rented;YES;3;38;North Caroli
+10/24/2016 13:49:52;820384;2;TRUE;165050;Married;TRUE;Rented;YES;2;43;Missouri
+10/24/2016 13:50:50;821107;1;TRUE;53900;Married;TRUE;Homeowner with mortgage/loan;YES;3;68;Florida
+10/24/2016 13:51:04;821682;2;TRUE;40000;Married;TRUE;Homeowner with mortgage/loan;YES;2;62;Illinois
+10/24/2016 13:51:33;822729;2;;62130;Married;TRUE;Homeowner free and clear;YES;2;67;Ohio
+10/24/2016 13:52:00;823146;1;;70000;Widowed;TRUE;Homeowner with mortgage/loan;YES;1;81;Pennsylvania
+10/24/2016 13:53:03;824378;1;;48000;Widowed;TRUE;Homeowner free and clear;YES;1;75;Missouri
+10/24/2016 13:58:14;825129;2;TRUE;60000;Married;TRUE;Homeowner with mortgage/loan;YES;4;46;California
+10/24/2016 13:58:16;825790;1;TRUE;42300;Married;TRUE;Homeowner free and clear;YES;1;39;Arkansas
+10/24/2016 13:58:48;828208;2;TRUE;439400;Married;TRUE;Homeowner with mortgage/loan;YES;2;69;New York
+10/24/2016 13:59:40;829195;2;FALSE;3030;Married;TRUE;Homeowner with mortgage/loan;YES;1;55;Ohio
+10/24/2016 14:00:07;829722;1;;29000;Widowed;TRUE;Homeowner free and clear;NO;;78;Tennessee
+10/24/2016 14:00:15;830245;2;TRUE;120300;Married;TRUE;Homeowner with mortgage/loan;YES;1;48;Ohio
+10/24/2016 14:01:02;830758;1;TRUE;4390;Never Married;FALSE;Rented;YES;1;24;Michigan
+10/24/2016 14:02:01;831497;2;TRUE;95000;Married;TRUE;Homeowner with mortgage/loan;YES;3;47;Illinois
+10/24/2016 14:06:56;832435;2;TRUE;55001;Married;TRUE;Homeowner free and clear;YES;3;48;New York
+10/24/2016 14:07:58;832866;2;;6000;Divorced/Separated;FALSE;Homeowner with mortgage/loan;YES;2;57;Wisconsin
+10/24/2016 14:08:50;832949;2;TRUE;54000;Divorced/Separated;TRUE;Rented;YES;1;42;Kentucky
+10/24/2016 14:09:43;833321;2;FALSE;30900;Never Married;FALSE;Homeowner with mortgage/loan;YES;2;51;Michigan
+10/24/2016 14:11:15;835830;1;TRUE;51000;Married;TRUE;Homeowner with mortgage/loan;YES;3;41;Washington
+10/24/2016 14:11:21;837381;2;TRUE;10800;Never Married;TRUE;;NO;;20;Virginia
+10/24/2016 14:11:36;841342;2;TRUE;85050;Married;TRUE;Homeowner with mortgage/loan;YES;3;62;Texas
+10/24/2016 14:11:59;843811;1;TRUE;40000;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;35;India
+10/24/2016 14:12:47;844007;2;;0;Married;FALSE;;NO;;46;California
+10/24/2016 14:13:35;845421;1;FALSE;4300;Married;TRUE;Rented;NO;;27;Ohio
+10/24/2016 14:16:37;846713;2;;250;Never Married;TRUE;;NO;;45;Florida
+10/24/2016 14:18:34;847156;2;TRUE;72000;Married;TRUE;Homeowner with mortgage/loan;YES;2;52;Colorado
+10/24/2016 14:19:43;847699;2;TRUE;26300;Never Married;TRUE;Homeowner with mortgage/loan;YES;4;26;New York
+10/24/2016 14:20:42;848521;2;TRUE;18300;Married;FALSE;Rented;YES;3;44;California
+10/24/2016 14:20:56;851013;2;TRUE;85200;Married;TRUE;Homeowner with mortgage/loan;YES;2;63;Massachusetts
+10/24/2016 14:25:53;851287;2;;12801;Widowed;TRUE;Homeowner with mortgage/loan;YES;2;65;Colorado
+10/24/2016 14:28:08;851744;1;TRUE;55000;Never Married;TRUE;Homeowner with mortgage/loan;YES;2;24;Michigan
+10/24/2016 14:29:38;855914;1;FALSE;8400;Married;TRUE;Rented;NO;;31;Connecticut
+10/24/2016 14:33:22;856222;1;TRUE;70200;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;55;Hawaii
+10/24/2016 14:34:54;857482;1;TRUE;43000;Divorced/Separated;FALSE;Homeowner with mortgage/loan;YES;1;63;Washington
+10/24/2016 14:38:40;857511;1;TRUE;30;Married;TRUE;Homeowner with mortgage/loan;YES;4;54;Illinois
+10/24/2016 14:38:41;860763;2;TRUE;66000;Married;TRUE;Homeowner with mortgage/loan;YES;3;49;Michigan
+10/24/2016 14:39:26;861046;1;TRUE;68000;Married;TRUE;Rented;YES;2;29;Pennsylvania
+10/24/2016 14:42:13;861489;1;FALSE;17000;Divorced/Separated;FALSE;Homeowner with mortgage/loan;YES;1;56;New Jersey
+10/24/2016 14:42:47;862412;2;TRUE;120000;Married;TRUE;Homeowner with mortgage/loan;YES;2;75;Pennsylvania
+10/24/2016 14:43:29;863276;1;FALSE;19000;Married;TRUE;Rented;YES;1;46;Wisconsin
+10/24/2016 14:48:10;863391;2;TRUE;17000;Married;TRUE;Rented;YES;2;20;Alabama
+10/24/2016 14:48:56;863424;1;TRUE;62000;Never Married;TRUE;Rented;YES;1;42;Illinois
+10/24/2016 14:54:28;863443;1;TRUE;9000;Never Married;FALSE;Rented;YES;2;48;New York
+10/24/2016 14:54:39;864947;1;;22700;Divorced/Separated;TRUE;Homeowner free and clear;YES;1;67;Arizo
+10/24/2016 15:02:15;867842;1;;27400;Widowed;TRUE;Homeowner free and clear;YES;1;75;Pennsylvania
+10/24/2016 15:02:28;868481;2;TRUE;30000;Married;TRUE;Homeowner with mortgage/loan;YES;3;36;Missouri
+10/24/2016 15:03:40;869997;2;TRUE;62000;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;28;Pennsylvania
+10/24/2016 15:04:26;870169;2;TRUE;30000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;36;Kentucky
+10/24/2016 15:06:21;870909;1;;4000;Married;TRUE;Homeowner free and clear;YES;2;57;Massachusetts
+10/24/2016 15:11:25;871562;2;TRUE;37000;Never Married;FALSE;Rented;YES;2;19;Texas
+10/24/2016 15:11:26;872071;2;TRUE;141100;Married;TRUE;Homeowner with mortgage/loan;YES;3;57;Minnesota
+10/24/2016 15:15:48;873626;1;TRUE;35000;Married;TRUE;Homeowner with mortgage/loan;YES;2;46;Texas
+10/24/2016 15:19:21;874159;1;TRUE;7500;Married;TRUE;Homeowner with mortgage/loan;YES;2;47;North Caroli
+10/24/2016 15:20:04;875771;2;FALSE;175200;Married;TRUE;Homeowner with mortgage/loan;YES;3;68;Arkansas
+10/24/2016 15:24:17;876972;1;TRUE;10000;Married;FALSE;Rented;YES;3;28;New York
+10/24/2016 15:25:56;878578;2;TRUE;24000;Never Married;TRUE;Homeowner with mortgage/loan;YES;2;38;Texas
+10/24/2016 15:33:10;878875;2;TRUE;40500;Married;TRUE;Rented;YES;2;37;Louisia
+10/24/2016 15:33:22;878882;2;TRUE;76000;Married;TRUE;Homeowner with mortgage/loan;NO;;33;Minnesota
+10/24/2016 15:34:48;880240;2;;0;Never Married;TRUE;;NO;;87;Georgia
+10/24/2016 15:37:50;882950;1;;14500;Widowed;TRUE;Homeowner free and clear;NO;;86;Wisconsin
+10/24/2016 15:41:51;883639;2;TRUE;55000;Married;TRUE;Rented;YES;2;38;California
+10/24/2016 15:43:09;884334;2;TRUE;51000;Married;TRUE;Rented;YES;2;52;Michigan
+10/24/2016 15:43:54;885269;2;FALSE;32500;Married;FALSE;Homeowner with mortgage/loan;YES;3;50;New Jersey
+10/24/2016 15:49:20;886647;1;TRUE;10600;Never Married;FALSE;Rented;YES;4;19;Georgia
+10/24/2016 15:55:41;887135;2;;233000;Married;TRUE;Homeowner free and clear;YES;2;67;Missouri
+10/24/2016 15:55:49;887400;2;TRUE;43000;Divorced/Separated;TRUE;Rented;YES;2;57;North Caroli
+10/24/2016 15:56:31;892483;2;;100;Married;TRUE;Homeowner with mortgage/loan;YES;3;68;Minnesota
+10/24/2016 15:59:03;896869;1;FALSE;22000;Divorced/Separated;FALSE;Rented;YES;1;63;Alabama
+10/24/2016 16:03:37;897580;2;TRUE;59500;Married;TRUE;Homeowner with mortgage/loan;YES;4;50;Pennsylvania
+10/24/2016 16:05:47;898396;2;TRUE;45000;Married;TRUE;Homeowner free and clear;YES;3;47;Michigan
+10/24/2016 16:18:20;900377;2;TRUE;70000;Married;TRUE;Homeowner with mortgage/loan;YES;4;47;Arizo
+10/24/2016 16:19:28;900986;1;TRUE;95050;Married;TRUE;Rented;YES;1;33;Illinois
+10/24/2016 16:19:48;901246;1;TRUE;65000;Married;TRUE;Homeowner with mortgage/loan;YES;3;39;Oregon
+10/24/2016 16:22:56;902413;2;TRUE;52000;Married;TRUE;Homeowner with mortgage/loan;YES;2;45;Maryland
+10/24/2016 16:26:21;904144;1;;5700;Widowed;TRUE;Homeowner free and clear;YES;1;93;California
+10/24/2016 16:27:50;904594;1;;0;Married;FALSE;Rented;YES;2;50;Connecticut
+10/24/2016 16:28:17;904673;1;;0;Married;TRUE;Homeowner with mortgage/loan;YES;4;52;Illinois
+10/24/2016 16:30:31;907824;1;FALSE;43000;Never Married;FALSE;Rented;YES;1;55;New Jersey
+10/24/2016 16:32:05;908176;1;;10100;Widowed;TRUE;Rented;NO;;76;Pennsylvania
+10/24/2016 16:32:41;908928;2;TRUE;32000;Divorced/Separated;TRUE;Homeowner free and clear;YES;4;56;Illinois
+10/24/2016 16:36:23;909002;1;;0;Married;TRUE;Homeowner with mortgage/loan;YES;2;31;New York
+10/24/2016 16:36:47;911763;1;;26800;Widowed;TRUE;Homeowner with mortgage/loan;YES;2;77;Pennsylvania
+10/24/2016 16:38:03;912196;1;;14500;Divorced/Separated;TRUE;Rented;NO;;84;Michigan
+10/24/2016 16:42:04;913398;2;FALSE;29000;Married;TRUE;Homeowner with mortgage/loan;YES;1;51;New York
+10/24/2016 16:43:04;913679;2;;22000;Married;TRUE;Homeowner free and clear;YES;2;83;California
+10/24/2016 16:48:27;914187;1;TRUE;83000;Married;TRUE;Homeowner with mortgage/loan;YES;3;25;Florida
+10/24/2016 16:48:40;924426;2;TRUE;65000;Divorced/Separated;TRUE;Rented;YES;2;37;Oregon
+10/24/2016 16:49:52;924897;1;TRUE;155800;Divorced/Separated;TRUE;Rented;YES;1;50;Arizo
+10/24/2016 16:50:24;925421;2;TRUE;35600;Married;FALSE;Homeowner with mortgage/loan;YES;2;49;Georgia
+10/24/2016 16:50:40;926808;2;TRUE;17000;Married;FALSE;Rented;YES;2;42;Kentucky
+10/24/2016 16:55:49;927129;1;FALSE;16500;Never Married;TRUE;Homeowner with mortgage/loan;YES;6;32;Maryland
+10/24/2016 17:00:47;928004;2;;17000;Married;TRUE;Homeowner with mortgage/loan;YES;2;58;Missouri
+10/24/2016 17:06:54;928569;1;TRUE;14800;Married;TRUE;Rented;YES;2;21;Florida
+10/24/2016 17:10:20;931141;2;TRUE;33000;Divorced/Separated;FALSE;Rented;YES;4;25;South Caroli
+10/24/2016 17:17:21;931352;1;;9600;Widowed;TRUE;Homeowner free and clear;YES;1;85;California
+10/24/2016 17:21:47;931449;2;;42400;Married;TRUE;Homeowner free and clear;YES;2;0;Missouri
+10/24/2016 17:24:56;932143;1;TRUE;50000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;52;Texas
+10/24/2016 17:26:21;932574;2;;12500;Never Married;TRUE;Rented;NO;;66;Massachusetts
+10/24/2016 17:28:23;934426;2;TRUE;28000;Married;TRUE;Homeowner with mortgage/loan;YES;3;62;Louisia
+10/24/2016 17:33:15;938913;2;;47000;Married;TRUE;Homeowner free and clear;YES;1;61;Massachusetts
+10/24/2016 17:34:23;940084;2;TRUE;53000;Never Married;TRUE;Homeowner with mortgage/loan;YES;2;29;California
+10/24/2016 17:41:20;948494;2;TRUE;385000;Married;TRUE;Homeowner with mortgage/loan;YES;2;34;Ohio
+10/24/2016 17:42:12;949925;1;TRUE;790;Married;TRUE;Homeowner with mortgage/loan;YES;2;44;Florida
+10/24/2016 17:42:38;950326;2;TRUE;15000;Never Married;FALSE;Rented;YES;1;26;Virginia
+10/24/2016 17:45:27;952729;1;TRUE;35000;Never Married;TRUE;Rented;YES;1;28;Texas
+10/24/2016 17:48:31;953043;1;TRUE;20000;Never Married;TRUE;Rented;YES;2;19;Texas
+10/24/2016 17:50:12;955457;2;TRUE;32000;Married;TRUE;Homeowner free and clear;YES;4;43;Kansas
+10/24/2016 17:50:20;957083;2;;30400;Divorced/Separated;TRUE;Rented;NO;;64;Pennsylvania
+10/24/2016 17:51:10;958271;1;TRUE;180000;Divorced/Separated;TRUE;Rented;YES;1;39;New York
+10/24/2016 17:51:23;960591;2;TRUE;40000;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;49;South Caroli
+10/24/2016 17:54:01;961665;2;;0;Never Married;FALSE;;NO;;45;Mississippi
+10/24/2016 17:54:22;964297;2;TRUE;10000;Married;TRUE;Homeowner with mortgage/loan;YES;5;56;Virginia
+10/24/2016 17:54:47;965058;1;FALSE;6000;Never Married;FALSE;Rented;YES;1;28;Tennessee
+10/24/2016 18:00:22;965618;2;TRUE;113500;Never Married;TRUE;Homeowner with mortgage/loan;YES;2;48;Texas
+10/24/2016 18:02:21;965689;2;;17990;Married;TRUE;Homeowner with mortgage/loan;YES;3;56;Texas
+10/24/2016 18:04:24;966699;2;TRUE;70000;Divorced/Separated;TRUE;Rented;YES;1;50;Georgia
+10/24/2016 18:04:44;968478;1;TRUE;46800;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;3;48;Virginia
+10/24/2016 18:05:32;968830;2;TRUE;4230;Never Married;TRUE;Homeowner with mortgage/loan;YES;3;67;Ohio
+10/24/2016 18:07:57;970098;2;;19000;Married;TRUE;Rented;YES;2;65;New Jersey
+10/24/2016 18:08:15;971703;2;FALSE;-8700;Married;TRUE;Homeowner with mortgage/loan;YES;3;60;Oklahoma
+10/24/2016 18:11:10;971768;2;TRUE;8000;Never Married;FALSE;;NO;;45;Alabama
+10/24/2016 18:11:37;973386;2;TRUE;45800;Married;TRUE;Homeowner with mortgage/loan;YES;2;58;Maryland
+10/24/2016 18:13:18;973839;2;TRUE;45600;Married;TRUE;Homeowner with mortgage/loan;YES;3;67;Virginia
+10/24/2016 18:16:29;975187;1;TRUE;46000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;3;48;New York
+10/24/2016 18:24:07;975652;1;TRUE;61000;Never Married;TRUE;Rented;YES;1;35;Pennsylvania
+10/24/2016 18:26:15;979475;1;TRUE;75000;Married;TRUE;Homeowner with mortgage/loan;YES;3;56;Nebraska
+10/24/2016 18:26:22;979736;2;TRUE;32000;Married;TRUE;Homeowner with mortgage/loan;YES;3;36;Connecticut
+10/24/2016 18:26:53;980375;1;TRUE;84000;Married;TRUE;Homeowner with mortgage/loan;YES;2;61;Wisconsin
+10/24/2016 18:27:20;980412;1;;28800;Married;TRUE;Homeowner with mortgage/loan;YES;2;62;Connecticut
+10/24/2016 18:27:56;980947;1;;2400;Never Married;TRUE;Rented;YES;2;20;Florida
+10/24/2016 18:30:04;985415;1;TRUE;39000;Divorced/Separated;TRUE;Homeowner free and clear;YES;1;55;Illinois
+10/24/2016 18:30:06;986039;2;TRUE;42000;Never Married;FALSE;Rented;YES;1;36;Pennsylvania
+10/24/2016 18:33:22;986096;2;TRUE;172000;Married;TRUE;Homeowner with mortgage/loan;YES;2;41;Illinois
+10/24/2016 18:33:43;987046;2;TRUE;120350;Married;TRUE;Rented;YES;1;44;Wisconsin
+10/24/2016 18:36:46;987884;1;TRUE;21000;Widowed;TRUE;Homeowner with mortgage/loan;YES;2;50;Illinois
+10/24/2016 18:41:36;988264;2;FALSE;5000;Married;TRUE;Homeowner with mortgage/loan;YES;5;55;Alabama
+10/24/2016 18:41:49;988580;2;;17100;Married;TRUE;Homeowner with mortgage/loan;NO;;77;Massachusetts
+10/24/2016 18:45:46;991697;1;;11000;Never Married;FALSE;Rented;YES;2;40;California
+10/24/2016 18:46:37;991794;2;;14600;Married;TRUE;Homeowner free and clear;YES;1;93;New Hampshire
+10/24/2016 18:47:36;991888;2;;67000;Married;TRUE;Homeowner free and clear;YES;1;93;South Dakota
+10/24/2016 18:50:11;993668;1;TRUE;80000;Never Married;TRUE;Rented;YES;2;39;Illinois
+10/24/2016 18:54:24;994628;1;;0;Married;FALSE;Rented;YES;2;29;California
+10/24/2016 18:55:08;996953;1;FALSE;0;Married;FALSE;Rented;YES;3;35;Georgia
+10/24/2016 18:57:28;997940;1;;0;Married;TRUE;Rented;YES;2;27;Texas
+10/24/2016 19:00:24;998185;1;;6000;Married;TRUE;Homeowner with mortgage/loan;YES;2;36;California
+10/24/2016 19:01:11;999444;2;TRUE;24000;Married;TRUE;Rented;YES;2;24;Alabama
+10/24/2016 19:03:16;1000510;2;TRUE;90000;Married;FALSE;Occupied with no rent;YES;3;41;Connecticut
+10/24/2016 19:03:21;1002936;1;TRUE;55000;Never Married;TRUE;Rented;YES;2;41;Texas
+10/24/2016 19:08:32;1003135;2;;15400;Married;TRUE;;NO;;88;Maryland
+10/24/2016 19:14:59;1003695;1;;0;Never Married;TRUE;Rented;YES;1;55;Georgia
+10/24/2016 19:18:01;1005559;2;;82800;Married;TRUE;Homeowner with mortgage/loan;YES;2;63;Michigan
+10/24/2016 19:18:12;1006488;1;TRUE;38000;Divorced/Separated;TRUE;Rented;NO;;59;Minnesota
+10/24/2016 19:18:59;1010216;1;TRUE;14800;Never Married;TRUE;Rented;YES;6;28;Massachusetts
+10/24/2016 19:21:39;1016594;2;;14400;Married;TRUE;Rented;YES;1;69;Ohio
+10/24/2016 19:26:28;1022619;2;;62800;Divorced/Separated;TRUE;Rented;YES;1;72;West Virginia
+10/24/2016 19:27:21;1024624;1;TRUE;31900;Divorced/Separated;TRUE;Homeowner free and clear;YES;1;62;Ohio
+10/24/2016 19:28:02;1024809;2;TRUE;18000;Married;TRUE;Homeowner with mortgage/loan;YES;1;24;Nevada
+10/24/2016 19:33:03;1026982;2;TRUE;31200;Never Married;FALSE;Rented;YES;2;26;Connecticut
+10/24/2016 19:35:06;1029778;2;TRUE;11200;Married;TRUE;Homeowner with mortgage/loan;YES;2;84;Minnesota
+10/24/2016 19:40:24;1031473;2;TRUE;259300;Widowed;TRUE;Homeowner with mortgage/loan;YES;4;65;Minnesota
+10/24/2016 19:51:09;1031701;2;TRUE;45100;Never Married;TRUE;Rented;YES;1;44;Georgia
+10/24/2016 19:53:34;1032071;1;FALSE;7190;Never Married;TRUE;Rented;YES;1;35;South Caroli
+10/24/2016 19:57:33;1032120;1;TRUE;184000;Married;FALSE;Homeowner with mortgage/loan;YES;2;41;Ohio
+10/24/2016 20:02:20;1032402;2;TRUE;22800;Married;TRUE;Rented;YES;2;72;India
+10/24/2016 20:02:34;1033341;2;TRUE;4800;Married;TRUE;Occupied with no rent;YES;2;34;Texas
+10/24/2016 20:04:04;1033571;2;TRUE;31900;Divorced/Separated;TRUE;Rented;YES;2;68;Ohio
+10/24/2016 20:05:11;1034979;1;;750;Never Married;TRUE;Rented;YES;1;38;India
+10/24/2016 20:06:58;1034994;1;;10400;Widowed;TRUE;Occupied with no rent;YES;2;57;Ohio
+10/24/2016 20:07:12;1036358;1;TRUE;44500;Divorced/Separated;TRUE;Rented;YES;1;48;Georgia
+10/24/2016 20:07:35;1036746;1;;33100;Widowed;TRUE;Homeowner with mortgage/loan;YES;2;65;New York
+10/24/2016 20:08:08;1037495;1;TRUE;22800;Never Married;FALSE;Rented;YES;1;30;New York
+10/24/2016 20:11:34;1037857;2;TRUE;39000;Married;TRUE;Homeowner with mortgage/loan;YES;3;22;Ohio
+10/24/2016 20:16:03;1038537;1;TRUE;32000;Never Married;FALSE;Homeowner free and clear;YES;1;42;Ohio
+10/24/2016 20:17:20;1039209;2;;1000;Married;TRUE;Homeowner with mortgage/loan;YES;4;59;Washington
+10/24/2016 20:20:17;1040818;2;TRUE;285500;Married;TRUE;Homeowner with mortgage/loan;YES;3;46;North Caroli
+10/24/2016 20:30:02;1042303;2;TRUE;71300;Married;TRUE;Rented;YES;2;28;Missouri
+10/24/2016 20:33:05;1042791;2;FALSE;25800;Married;TRUE;Rented;YES;2;46;Ohio
+10/24/2016 20:37:04;1044036;1;TRUE;52000;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;31;Ohio
+10/24/2016 20:37:41;1046317;1;;19000;Widowed;TRUE;Homeowner with mortgage/loan;YES;1;89;India
+10/24/2016 20:42:14;1046696;2;TRUE;24800;Married;TRUE;Homeowner with mortgage/loan;YES;3;65;Maryland
+10/24/2016 20:52:30;1047534;2;TRUE;200000;Married;TRUE;Homeowner with mortgage/loan;YES;4;225;Washington
+10/24/2016 20:54:19;1048652;1;;1400;Divorced/Separated;TRUE;Rented;YES;1;77;Louisia
+10/24/2016 20:58:35;1048836;2;TRUE;40000;Married;TRUE;Rented;YES;3;55;Maryland
+10/24/2016 21:02:33;1051439;2;TRUE;96000;Married;TRUE;Homeowner with mortgage/loan;YES;2;40;Massachusetts
+10/24/2016 21:03:21;1052064;2;TRUE;100000;Never Married;TRUE;Rented;YES;1;33;Connecticut
+10/24/2016 21:08:40;1053513;2;TRUE;135070;Married;TRUE;Homeowner with mortgage/loan;YES;4;59;Minnesota
+10/24/2016 21:09:37;1055360;1;;0;Married;TRUE;Homeowner with mortgage/loan;YES;3;58;New York
+10/24/2016 21:13:19;1057167;1;;29100;Widowed;TRUE;;NO;;93;North Caroli
+10/24/2016 21:14:23;1057778;1;;18000;Never Married;TRUE;Rented;YES;4;19;California
+10/24/2016 21:25:15;1058755;1;TRUE;37000;Divorced/Separated;TRUE;Homeowner free and clear;YES;1;59;Texas
+10/24/2016 21:32:36;1063014;1;TRUE;82000;Married;TRUE;Rented;YES;2;43;California
+10/24/2016 21:37:38;1064979;1;TRUE;45000;Divorced/Separated;TRUE;Rented;YES;2;43;Pennsylvania
+10/24/2016 21:39:37;1065059;1;FALSE;26600;Never Married;FALSE;Rented;YES;1;28;California
+10/24/2016 21:39:56;1065669;1;TRUE;52500;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;2;61;Oregon
+10/24/2016 21:42:53;1068379;1;TRUE;80700;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;61;Massachusetts
+10/24/2016 21:45:37;1068855;2;TRUE;171000;Married;TRUE;Homeowner with mortgage/loan;YES;6;59;Pennsylvania
+10/24/2016 21:47:00;1072259;2;;10500;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;60;India
+10/24/2016 21:47:51;1072827;2;TRUE;48000;Married;FALSE;Rented;YES;4;64;California
+10/24/2016 21:54:46;1075920;2;TRUE;135000;Married;TRUE;Homeowner with mortgage/loan;YES;2;47;Illinois
+10/24/2016 22:00:27;1076007;2;TRUE;25000;Never Married;TRUE;Rented;YES;3;25;Pennsylvania
+10/24/2016 22:07:32;1079462;1;TRUE;9500;Never Married;TRUE;Rented;YES;2;36;Arizona
+10/24/2016 22:13:23;1079878;1;;37200;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;62;Michigan
+10/24/2016 22:15:24;1082333;2;TRUE;45000;Divorced/Separated;TRUE;Homeowner free and clear;YES;2;50;South Caroli
+10/24/2016 22:30:05;1083939;2;;0;Married;TRUE;Homeowner free and clear;YES;1;73;Minnesota
+10/24/2016 22:44:44;1084583;1;TRUE;12000;Married;TRUE;Homeowner with mortgage/loan;YES;2;41;Maryland
+10/24/2016 22:53:35;1086100;1;FALSE;28000;Never Married;FALSE;Rented;YES;2;26;Connecticut
+10/24/2016 23:04:06;1086785;1;;11600;Married;TRUE;Homeowner free and clear;YES;2;84;Washington
+10/24/2016 23:13:25;1087193;1;TRUE;99000;Widowed;TRUE;Homeowner with mortgage/loan;NO;;75;Illinois
+10/24/2016 23:57:52;1088407;2;TRUE;180000;Married;TRUE;Homeowner with mortgage/loan;YES;2;36;California
+10/25/2016 0:08:16;1089530;1;TRUE;48000;Widowed;TRUE;Rented;YES;1;54;Alabama
+10/25/2016 0:23:59;1090019;2;TRUE;34000;Married;FALSE;Rented;YES;2;57;Ohio
+10/25/2016 0:24:29;1095968;1;TRUE;69500;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;46;Florida
+10/25/2016 0:44:27;1096606;2;TRUE;52500;Married;TRUE;Homeowner with mortgage/loan;YES;3;50;Maine
+10/25/2016 0:46:14;1097109;2;TRUE;44000;Married;TRUE;Homeowner with mortgage/loan;YES;4;50;Ohio
+10/25/2016 1:25:34;1097837;1;FALSE;26800;Married;TRUE;Homeowner with mortgage/loan;YES;2;53;California
+10/25/2016 1:26:55;1100932;1;FALSE;11400;Married;TRUE;Homeowner with mortgage/loan;YES;2;40;New Jersey
+10/25/2016 1:37:36;1105503;2;TRUE;52200;Married;TRUE;Homeowner with mortgage/loan;YES;4;62;California
+10/25/2016 1:51:26;1108038;1;TRUE;45500;Married;TRUE;Rented;YES;2;40;Texas
+10/25/2016 2:41:48;1108230;1;TRUE;30400;Widowed;TRUE;Rented;YES;1;64;New York
+10/25/2016 2:47:26;1110560;2;TRUE;12000;Never Married;FALSE;Homeowner with mortgage/loan;YES;3;20;Texas
+10/25/2016 3:16:25;1110962;2;FALSE;3400;Divorced/Separated;FALSE;Rented;NO;;58;North Caroli
+10/25/2016 3:30:20;1111699;2;TRUE;117200;Never Married;TRUE;Rented;YES;4;40;Pennsylvania
+10/25/2016 3:33:28;1114096;2;TRUE;33500;Married;TRUE;Rented;YES;1;46;California
+10/25/2016 4:35:37;1115937;1;;12500;Never Married;TRUE;Rented;NO;;58;Pennsylvania
+10/25/2016 4:37:53;1116742;2;TRUE;21600;Married;TRUE;Rented;YES;2;65;Michigan
+10/25/2016 4:43:09;1117486;2;TRUE;33700;Married;TRUE;Homeowner free and clear;YES;1;64;New Jersey
+10/25/2016 4:44:19;1117622;1;TRUE;66000;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;26;Nebraska
+10/25/2016 4:52:46;1120122;2;;6000;Never Married;TRUE;;NO;;80;Mississippi
+10/25/2016 6:09:40;1121202;1;TRUE;116000;Married;TRUE;Rented;YES;2;37;Pennsylvania
+10/25/2016 6:20:48;1121810;1;;57700;Divorced/Separated;TRUE;Homeowner free and clear;YES;1;80;New York
+10/25/2016 7:03:59;1127889;1;TRUE;64270;Divorced/Separated;TRUE;Rented;YES;2;55;Virginia
+10/25/2016 7:37:46;1131536;2;TRUE;80000;Married;TRUE;Homeowner with mortgage/loan;YES;4;57;New York
+10/25/2016 7:38:07;1131990;1;TRUE;80000;Never Married;TRUE;Homeowner with mortgage/loan;YES;2;51;Texas
+10/25/2016 8:14:38;1132236;1;TRUE;40000;Never Married;TRUE;Rented;YES;1;55;Michigan
+10/25/2016 8:24:05;1133606;1;;24000;Widowed;TRUE;Homeowner with mortgage/loan;YES;1;67;Tennessee
+10/25/2016 8:31:32;1133846;1;TRUE;75000;Married;TRUE;Homeowner with mortgage/loan;YES;5;47;Michigan
+10/25/2016 8:39:25;1137728;1;;10800;Widowed;TRUE;Homeowner free and clear;YES;1;84;New York
+10/25/2016 8:40:14;1139422;1;;9600;Widowed;TRUE;Rented;YES;1;85;New Mexico
+10/25/2016 9:00:13;1140783;1;TRUE;39000;Married;TRUE;Rented;YES;2;43;Nebraska
+10/25/2016 9:09:17;1140973;2;;36000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;2;43;Tennessee
+10/25/2016 9:17:19;1143785;1;TRUE;145000;Married;TRUE;Homeowner with mortgage/loan;YES;2;50;Tennessee
+10/25/2016 9:19:47;1144205;2;TRUE;28000;Married;TRUE;Homeowner with mortgage/loan;YES;2;65;Michigan
+10/25/2016 9:32:14;1145290;1;TRUE;450;Married;TRUE;Rented;YES;1;33;New York
+10/25/2016 10:15:04;1149284;2;TRUE;28800;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;40;India
+10/25/2016 10:17:59;1150024;2;TRUE;36000;Married;TRUE;Rented;YES;2;37;Washington
+10/25/2016 10:19:33;1152584;1;;9600;Divorced/Separated;TRUE;Rented;NO;;73;New Jersey
+10/25/2016 10:26:12;1152642;2;;0;Never Married;FALSE;Rented;YES;1;54;Virginia
+10/25/2016 10:29:22;1159665;2;TRUE;37000;Married;TRUE;Homeowner with mortgage/loan;YES;4;46;Maryland
+10/25/2016 10:32:46;1159694;2;TRUE;50000;Married;TRUE;Homeowner with mortgage/loan;YES;4;41;Minnesota
+10/25/2016 10:34:42;1159904;2;TRUE;100000;Married;TRUE;Homeowner with mortgage/loan;YES;3;39;Ohio
+10/25/2016 10:52:45;1160167;2;;41500;Married;TRUE;Homeowner with mortgage/loan;YES;2;74;Maryland
+10/25/2016 10:57:46;1165177;2;TRUE;40000;Divorced/Separated;TRUE;Rented;YES;2;38;India
+10/25/2016 11:13:38;1165631;2;TRUE;41000;Never Married;TRUE;Rented;YES;1;37;California
+10/25/2016 11:19:50;1167155;2;TRUE;153000;Never Married;TRUE;Rented;YES;1;32;New York
+10/25/2016 11:23:35;1169067;2;TRUE;165100;Married;TRUE;Homeowner with mortgage/loan;YES;4;71;California
+10/25/2016 11:24:26;1170716;1;;15200;Widowed;TRUE;Rented;YES;1;65;Pennsylvania
+10/25/2016 11:26:46;1171358;1;TRUE;75000;Never Married;TRUE;Rented;YES;1;40;California
+10/25/2016 11:40:20;1171408;2;TRUE;9000;Married;TRUE;Homeowner with mortgage/loan;YES;3;33;Monta
+10/25/2016 11:40:58;1172770;2;;74500;Married;TRUE;Homeowner free and clear;YES;2;62;Connecticut
+10/25/2016 11:45:19;1175925;2;;0;Married;TRUE;Homeowner with mortgage/loan;YES;5;59;New Mexico
+10/25/2016 11:45:44;1176266;1;TRUE;60000;Never Married;FALSE;Rented;YES;1;45;Tennessee
+10/25/2016 11:53:19;1178989;2;TRUE;44000;Widowed;TRUE;Homeowner with mortgage/loan;YES;2;58;Virginia
+10/25/2016 11:53:40;1180739;1;TRUE;115800;Married;TRUE;Homeowner with mortgage/loan;YES;3;52;California
+10/25/2016 12:35:02;1181596;2;TRUE;57000;Married;TRUE;Homeowner with mortgage/loan;YES;2;55;Texas
+10/25/2016 12:39:53;1184851;1;TRUE;42000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;2;66;Pennsylvania
+10/25/2016 12:43:21;1185185;2;;19000;Married;TRUE;Homeowner with mortgage/loan;YES;1;71;Louisia
+10/25/2016 12:57:33;1185382;1;;7200;Never Married;TRUE;;NO;;26;Mississippi
+10/25/2016 12:59:46;1192089;2;;49000;Married;TRUE;Homeowner free and clear;YES;2;77;California
+10/25/2016 13:00:50;1194722;1;FALSE;3160;Never Married;FALSE;Rented;NO;;40;Massachusetts
+10/25/2016 13:01:44;1197386;1;TRUE;25000;Married;TRUE;Homeowner with mortgage/loan;YES;2;55;Alabama
+10/25/2016 13:07:37;1198992;2;;94600;Married;TRUE;Homeowner with mortgage/loan;YES;2;70;California
+10/25/2016 13:17:40;1199409;2;TRUE;18000;Never Married;FALSE;Rented;YES;1;34;Missouri
+10/25/2016 13:19:03;1200487;2;;0;Never Married;FALSE;;NO;;36;Texas
+10/25/2016 13:20:52;1201949;2;;25300;Divorced/Separated;TRUE;Homeowner free and clear;YES;4;83;Illinois
+10/25/2016 13:21:18;1210039;1;TRUE;48000;Never Married;FALSE;Rented;NO;;48;New York
+10/25/2016 13:22:39;1210604;1;;31500;Widowed;TRUE;Rented;NO;;89;New York
+10/25/2016 13:25:09;1211323;2;;46200;Widowed;TRUE;Rented;YES;1;74;Texas
+10/25/2016 13:33:25;1212823;1;TRUE;328000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;3;37;Ohio
+10/25/2016 13:34:27;1213106;2;TRUE;60000;Married;TRUE;Homeowner free and clear;YES;2;38;New York
+10/25/2016 13:35:52;1213329;1;TRUE;137000;Divorced/Separated;TRUE;Rented;YES;1;44;South Caroli
+10/25/2016 13:36:40;1213522;2;TRUE;15400;Married;TRUE;Homeowner with mortgage/loan;YES;2;58;New Hampshire
+10/25/2016 13:38:32;1215332;1;TRUE;42000;Married;TRUE;Homeowner with mortgage/loan;YES;2;64;New Jersey
+10/25/2016 13:39:04;1216026;2;;9600;Never Married;FALSE;Rented;YES;6;50;Maryland
+10/25/2016 13:40:03;1216094;2;;32100;Married;TRUE;Homeowner free and clear;YES;2;69;Tennessee
+10/25/2016 13:40:48;1216112;2;TRUE;46000;Never Married;TRUE;Homeowner free and clear;YES;1;41;Pennsylvania
+10/25/2016 13:42:43;1216615;1;;25000;Widowed;TRUE;Homeowner free and clear;YES;3;83;California
+10/25/2016 13:48:55;1217985;1;;19000;Widowed;TRUE;Homeowner with mortgage/loan;YES;2;74;Ohio
+10/25/2016 13:49:12;1218268;1;;0;Divorced/Separated;TRUE;Rented;YES;1;57;Arizo
+10/25/2016 13:49:58;1219346;2;;0;Never Married;FALSE;;NO;;23;California
+10/25/2016 13:50:51;1222380;2;TRUE;85000;Married;FALSE;Homeowner with mortgage/loan;YES;2;33;California
+10/25/2016 14:00:33;1222630;1;TRUE;78000;Married;TRUE;Homeowner with mortgage/loan;YES;2;52;South Caroli
+10/25/2016 14:01:33;1223510;1;;19600;Widowed;TRUE;Homeowner free and clear;YES;2;76;New York
+10/25/2016 14:03:34;1224734;2;TRUE;65000;Never Married;TRUE;Occupied with no rent;YES;1;52;Ohio
+10/25/2016 14:07:14;1225516;1;TRUE;104000;Never Married;TRUE;Rented;YES;1;48;Texas
+10/25/2016 14:10:24;1225838;2;TRUE;75000;Married;TRUE;Homeowner with mortgage/loan;YES;2;62;Oklahoma
+10/25/2016 14:10:39;1227678;2;TRUE;150000;Married;TRUE;Homeowner with mortgage/loan;YES;2;52;Ohio
+10/25/2016 14:26:31;1229417;1;TRUE;48000;Married;TRUE;Homeowner with mortgage/loan;YES;3;0;Washington
+10/25/2016 14:45:33;1231777;1;TRUE;91010;Never Married;TRUE;Rented;YES;1;52;California
+10/25/2016 14:56:32;1234349;1;TRUE;68400;Married;TRUE;Homeowner with mortgage/loan;YES;1;29;Florida
+10/25/2016 15:06:12;1236386;1;;12600;Widowed;TRUE;Homeowner free and clear;YES;1;78;Pennsylvania
+10/25/2016 15:13:41;1236514;1;TRUE;80000;Married;TRUE;Homeowner with mortgage/loan;YES;4;61;New York
+10/25/2016 15:16:08;1236675;2;TRUE;40200;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;39;Pennsylvania
+10/25/2016 15:23:46;1237055;2;TRUE;95000;Married;TRUE;Rented;YES;1;39;Massachusetts
+10/25/2016 15:38:28;1238436;1;;0;Married;FALSE;Rented;YES;2;25;Tennessee
+10/25/2016 15:40:39;1238436;1;;0;Married;FALSE;Rented;YES;2;25;Tennessee
+10/25/2016 15:50:20;1238518;2;;13200;Married;TRUE;Homeowner free and clear;YES;2;78;Pennsylvania
+10/25/2016 16:03:57;1238678;2;TRUE;65000;Married;FALSE;Homeowner with mortgage/loan;YES;1;40;Iowa
+10/25/2016 16:15:53;1239370;1;TRUE;45000;Married;TRUE;Homeowner with mortgage/loan;YES;2;50;Oklahoma
+10/25/2016 16:16:06;1239496;2;TRUE;104000;Married;TRUE;Homeowner with mortgage/loan;YES;2;33;West Virginia
+10/25/2016 16:20:50;1241524;2;TRUE;50000;Divorced/Separated;TRUE;Homeowner free and clear;YES;2;56;California
+10/25/2016 16:45:31;1241975;2;TRUE;35400;Married;FALSE;Homeowner with mortgage/loan;YES;2;51;New York
+10/25/2016 16:55:58;1245887;1;TRUE;615000;Married;TRUE;Homeowner with mortgage/loan;YES;3;44;Pennsylvania
+10/25/2016 16:58:35;1245912;1;TRUE;14000;Married;TRUE;Occupied with no rent;YES;1;28;Ohio
+10/25/2016 16:59:10;1249187;1;TRUE;60000;Married;TRUE;Homeowner with mortgage/loan;YES;3;55;Texas
+10/25/2016 16:59:50;1250656;2;TRUE;63000;Married;TRUE;Homeowner with mortgage/loan;YES;6;55;India
+10/25/2016 17:00:41;1250816;1;TRUE;50000;Never Married;TRUE;Rented;YES;1;28;India
+10/25/2016 17:01:49;1253904;2;TRUE;100000;Married;TRUE;Homeowner with mortgage/loan;YES;4;55;New Jersey
+10/25/2016 17:01:54;1254684;2;;20800;Married;TRUE;Homeowner with mortgage/loan;YES;1;93;Florida
+10/25/2016 17:03:31;1255530;2;FALSE;2400;Never Married;FALSE;Rented;YES;1;50;Tennessee
+10/25/2016 17:03:52;1258309;2;TRUE;22000;Married;TRUE;Homeowner with mortgage/loan;YES;3;52;Pennsylvania
+10/25/2016 17:05:08;1259310;2;TRUE;10000;Never Married;FALSE;Rented;YES;4;23;New York
+10/25/2016 17:11:03;1259643;1;FALSE;0;Divorced/Separated;TRUE;Rented;YES;1;57;West Virginia
+10/25/2016 17:17:36;1262812;2;TRUE;60000;Married;TRUE;Homeowner with mortgage/loan;YES;2;70;Maine
+10/25/2016 17:32:50;1262853;2;TRUE;8000;Never Married;TRUE;;NO;;20;Mississippi
+10/25/2016 17:48:47;1263543;2;;19200;Married;TRUE;Homeowner free and clear;YES;3;77;New York 
+10/25/2016 17:56:36;1264160;1;;34400;Widowed;TRUE;Homeowner free and clear;YES;1;80;Michigan
+10/25/2016 17:59:05;1264817;1;TRUE;64000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;51;Arkansas
+10/25/2016 18:09:56;1264848;2;TRUE;36000;Never Married;TRUE;Rented;NO;;40;Pennsylvania
+10/25/2016 18:16:17;1267400;2;;25000;Divorced/Separated;TRUE;Rented;NO;;70;Florida
+10/25/2016 18:19:50;1267682;1;;18200;Widowed;TRUE;Homeowner free and clear;YES;2;74;Florida
+10/25/2016 18:20:34;1267710;2;TRUE;68000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;2;42;Pennsylvania
+10/25/2016 18:22:02;1268916;2;TRUE;49000;Married;FALSE;Rented;YES;2;42;California
+10/25/2016 18:28:15;1269051;1;;137600;Widowed;TRUE;Homeowner with mortgage/loan;YES;1;69;Pennsylvania
+10/25/2016 18:36:20;1269422;2;TRUE;36000;Never Married;TRUE;;NO;;26;Virginia
+10/25/2016 18:37:32;1269661;1;;13600;Married;FALSE;Homeowner free and clear;YES;2;59;New Jersey
+10/25/2016 18:50:46;1273216;2;;0;Married;FALSE;Rented;YES;2;59;New York
+10/25/2016 18:59:58;1274592;2;TRUE;224000;Widowed;TRUE;Homeowner free and clear;YES;2;83;California
+10/25/2016 19:00:48;1276808;2;TRUE;40000;Never Married;FALSE;Rented;YES;1;27;Ohio
+10/25/2016 19:04:27;1278230;1;TRUE;110000;Married;TRUE;Homeowner with mortgage/loan;YES;2;33;Tennessee
+10/25/2016 19:12:32;1278909;2;;26910;Married;TRUE;Homeowner free and clear;YES;5;70;Missouri
+10/25/2016 19:16:04;1280826;2;TRUE;120000;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;40;Pennsylvania
+10/25/2016 19:17:47;1281448;2;;10600;Widowed;TRUE;Homeowner free and clear;YES;2;47;Georgia
+10/25/2016 19:28:14;1282540;2;;35870;Never Married;TRUE;Homeowner free and clear;YES;1;52;California
+10/25/2016 19:33:55;1282762;2;;0;Never Married;FALSE;;NO;;41;California
+10/25/2016 19:34:46;1283591;2;;65000;Married;TRUE;Homeowner free and clear;YES;2;84;Missouri
+10/25/2016 19:45:39;1283783;1;TRUE;40000;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;63;Vermont
+10/25/2016 19:47:35;1283962;2;TRUE;23950;Never Married;FALSE;Rented;YES;1;65;California
+10/25/2016 19:51:57;1284555;1;TRUE;191500;Married;TRUE;Homeowner with mortgage/loan;YES;2;41;Texas
+10/25/2016 20:00:43;1285807;1;TRUE;24000;Married;TRUE;Homeowner with mortgage/loan;YES;3;31;Minnesota
+10/25/2016 20:04:02;1288195;2;TRUE;2000;Never Married;TRUE;Rented;NO;;28;Ohio
+10/25/2016 20:24:01;1293509;2;;10400;Never Married;TRUE;Rented;NO;;34;Arizona
+10/25/2016 20:33:04;1295682;2;;250700;Married;TRUE;Homeowner with mortgage/loan;YES;3;76;Minnesota
+10/25/2016 20:49:21;1297652;2;TRUE;165200;Married;TRUE;Homeowner with mortgage/loan;YES;3;62;California
+10/25/2016 20:52:08;1299959;2;TRUE;19200;Married;TRUE;Rented;YES;3;51;California
+10/25/2016 21:12:30;1303744;2;TRUE;23000;Divorced/Separated;TRUE;Rented;YES;2;44;Missouri
+10/25/2016 21:13:01;1303929;1;FALSE;43400;Never Married;TRUE;Rented;YES;1;29;West Virginia
+10/25/2016 21:31:47;1305771;1;TRUE;14400;Never Married;TRUE;Rented;YES;1;31;Virginia
+10/25/2016 22:37:10;1307013;1;;0;Widowed;FALSE;Rented;YES;5;55;New York
+10/25/2016 23:49:59;1310634;2;TRUE;18000;Never Married;FALSE;Rented;NO;;24;California
+10/26/2016 2:22:37;1314429;2;;39000;Married;TRUE;Homeowner free and clear;YES;2;69;Michigan
+10/26/2016 5:46:15;1317659;2;TRUE;55000;Married;TRUE;Homeowner with mortgage/loan;YES;2;32;Michigan
+10/26/2016 6:27:04;1321154;1;;8000;Widowed;TRUE;;NO;;83;Monta
+10/26/2016 6:35:43;1322627;2;;20600;Married;TRUE;Homeowner with mortgage/loan;YES;2;54;Connecticut
+10/26/2016 11:06:35;1324576;2;TRUE;30000;Married;TRUE;Homeowner with mortgage/loan;YES;1;39;Pennsylvania
+10/26/2016 11:31:28;1327830;2;;47000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;67;Wisconsin
+10/26/2016 12:42:24;1328084;1;FALSE;4000;Married;TRUE;Rented;YES;2;42;Georgia
+10/26/2016 12:49:01;1328836;2;;54100;Widowed;TRUE;Homeowner free and clear;YES;2;86;Kentucky
+10/26/2016 13:02:12;1329294;2;TRUE;75200;Married;TRUE;Homeowner free and clear;YES;2;65;Florida
+10/26/2016 13:06:35;1329913;1;;12400;Divorced/Separated;TRUE;Rented;NO;;64;New York
+10/26/2016 13:20:33;1333775;2;FALSE;22250;Married;TRUE;Rented;YES;3;40;California
+10/26/2016 13:20:39;1335632;2;TRUE;28500;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;56;Florida
+10/26/2016 13:31:51;1339166;1;TRUE;40000;Married;TRUE;Homeowner with mortgage/loan;YES;3;46;Utah
+10/26/2016 13:58:57;1342135;1;;0;Never Married;TRUE;;NO;;31;Mississippi
+10/26/2016 14:18:47;1342272;1;FALSE;1200;Married;FALSE;Rented;YES;2;less than 30!;Oklahoma
+10/26/2016 14:27:33;1348440;2;TRUE;213000;Married;TRUE;Homeowner free and clear;YES;2;62;New York
+10/26/2016 14:41:32;1353087;2;;0;Never Married;FALSE;;NO;;25;Idaho
+10/26/2016 14:46:07;1354211;2;TRUE;136800;Married;TRUE;Homeowner with mortgage/loan;YES;3;60;Pennsylvania
+10/26/2016 14:47:36;1356541;1;;0;Never Married;TRUE;Rented;YES;1;21;Kentucky
+10/26/2016 14:50:16;1356693;2;TRUE;50000;Married;TRUE;Homeowner free and clear;YES;3;47;Missouri
+10/26/2016 14:51:54;1358975;1;TRUE;92000;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;1;46;North Caroli
+10/26/2016 14:52:53;1359790;2;;79950;Married;TRUE;Homeowner free and clear;YES;2;67;West Virginia
+10/26/2016 15:01:35;1359848;1;FALSE;13000;Married;FALSE;Homeowner free and clear;YES;4;59;Oregon
+10/26/2016 15:07:56;1361012;1;;255000;Widowed;TRUE;Homeowner free and clear;YES;1;69;Tennessee
+10/26/2016 16:17:55;1361709;2;;10800;Married;TRUE;Rented;YES;2;70;West Virginia
+10/26/2016 16:45:45;1362854;1;;35700;Married;FALSE;Homeowner with mortgage/loan;YES;1;28;Illinois
+10/26/2016 17:36:35;1364327;2;TRUE;30000;Married;TRUE;Rented;YES;2;40;Texas
+10/26/2016 17:39:33;1364927;2;TRUE;160000;Married;TRUE;Homeowner with mortgage/loan;YES;2;59;Maine
+10/26/2016 17:39:50;1366883;1;TRUE;28000;Married;TRUE;Rented;YES;1;32;Michigan
+10/26/2016 18:12:17;1369231;2;;252000;Married;TRUE;Homeowner with mortgage/loan;YES;2;73;California
+10/26/2016 18:49:49;1369460;2;FALSE;0;Never Married;FALSE;Homeowner free and clear;YES;3;50;North Dakota
+10/26/2016 18:56:06;1369740;2;;48330;Widowed;TRUE;Rented;YES;1;64;New York
+10/26/2016 18:56:41;1370515;1;;15300;Married;TRUE;Homeowner with mortgage/loan;YES;2;62;Minnesota
+10/26/2016 21:03:18;1371785;1;TRUE;44900;Divorced/Separated;FALSE;Homeowner with mortgage/loan;YES;4;47;Illinois
+10/26/2016 22:11:26;1372296;1;;62000;Widowed;TRUE;Homeowner free and clear;YES;1;62;Oklahoma
+10/27/2016 0:37:03;1375846;1;TRUE;113950;Divorced/Separated;TRUE;Rented;YES;2;0;Louisia
+10/27/2016 3:25:44;1377197;2;;50000;Married;TRUE;Rented;YES;2;38;Massachusetts
+10/27/2016 3:38:54;1377390;2;TRUE;63450;Married;TRUE;Homeowner free and clear;YES;3;69;Ohio
+10/27/2016 3:48:24;1379036;2;FALSE;12000;Divorced/Separated;FALSE;Occupied with no rent;YES;2;61;Michigan
+10/27/2016 4:05:21;1379307;2;;0;Never Married;FALSE;;NO;;23;Minnesota
+10/27/2016 4:19:17;1380075;1;;248500;Widowed;TRUE;Homeowner with mortgage/loan;YES;1;81;New Jersey
+10/27/2016 4:21:22;1386080;1;;27000;Divorced/Separated;TRUE;Homeowner free and clear;YES;1;65;New York
+10/27/2016 4:29:45;1386114;2;TRUE;40000;Married;TRUE;Rented;YES;2;41;Texas
+10/27/2016 4:32:17;1386763;1;TRUE;43600;Never Married;TRUE;Rented;YES;1;29;Tennessee
+10/27/2016 4:40:54;1388751;1;FALSE;39000;Married;TRUE;Homeowner with mortgage/loan;YES;3;45;Minnesota
+10/27/2016 4:43:19;1390506;2;TRUE;76000;Married;TRUE;Homeowner with mortgage/loan;YES;2;33;Illinois
+10/27/2016 5:14:31;1391586;2;;22000;Married;TRUE;Homeowner free and clear;YES;4;64;Ohio
+10/27/2016 5:18:12;1392011;1;TRUE;402000;Married;TRUE;Homeowner free and clear;YES;1;50;Virginia
+10/27/2016 5:28:03;1392648;2;TRUE;70000;Married;TRUE;Homeowner with mortgage/loan;YES;5;60;Michigan
+10/27/2016 5:33:18;1393413;2;TRUE;9100;Never Married;TRUE;Occupied with no rent;YES;1;64;New Jersey
+10/27/2016 5:37:33;1393715;1;FALSE;25500;Never Married;TRUE;Rented;YES;1;48;Nebraska
+10/27/2016 5:47:16;1398054;2;TRUE;125000;Married;TRUE;Homeowner with mortgage/loan;YES;3;34;Maryland
+10/27/2016 5:50:01;1400440;2;;0;Married;TRUE;;NO;;37;Missouri
+10/27/2016 6:04:02;1401383;1;TRUE;50000;Married;TRUE;Homeowner with mortgage/loan;YES;2;57;Michigan
+10/27/2016 6:09:21;1401938;1;TRUE;32000;Divorced/Separated;TRUE;Rented;YES;2;24;California
+10/27/2016 6:19:47;1402550;2;TRUE;200000;Married;TRUE;Homeowner with mortgage/loan;YES;2;37;Florida
+10/27/2016 6:19:54;1403515;2;TRUE;382500;Married;TRUE;Homeowner with mortgage/loan;YES;3;66;India
+10/27/2016 6:31:27;1405584;1;;4000;Married;TRUE;Homeowner with mortgage/loan;YES;2;55;California
+10/27/2016 6:33:03;1407195;2;TRUE;33000;Never Married;FALSE;Homeowner with mortgage/loan;YES;1;30;Michigan
+10/27/2016 6:38:28;1407867;2;TRUE;100300;Divorced/Separated;TRUE;Homeowner with mortgage/loan;YES;3;53;Arizo
+10/27/2016 6:44:06;1407895;2;TRUE;35000;Married;TRUE;Homeowner with mortgage/loan;YES;2;55;Hawaii
+10/27/2016 6:54:28;1407916;2;TRUE;30000;Never Married;TRUE;Homeowner with mortgage/loan;YES;1;46;Louisia
+10/27/2016 7:11:26;1408280;1;TRUE;18000;Married;TRUE;Homeowner with mortgage/loan;YES;4;52;Wisconsin
+10/27/2016 7:15:54;1408913;1;;1000;Married;TRUE;Rented;NO;;60;Michigan
+10/27/2016 7:22:36;1409249;2;;36200;Married;TRUE;Homeowner free and clear;YES;5;73;New York
+10/27/2016 7:26:20;1411132;1;FALSE;46000;Divorced/Separated;TRUE;Rented;YES;1;56;Florida
+10/27/2016 7:26:56;1411860;1;;5400;Widowed;TRUE;;NO;;89;Pennsylvania
+10/27/2016 7:29:48;1412161;2;TRUE;38500;Married;TRUE;Rented;YES;1;29;Georgia
+10/27/2016 7:30:07;1412971;2;;43400;Married;TRUE;Homeowner free and clear;YES;1;too many;Ohio
+10/27/2016 7:30:26;1414286;1;FALSE;20900;Married;FALSE;Rented;YES;2;36;New York
+10/27/2016 7:35:14;1414286;1;FALSE;20900;Married;FALSE;Rented;YES;2;36;New York

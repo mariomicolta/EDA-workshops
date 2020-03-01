@@ -1,0 +1,1 @@
+data <- read.csv("precio_viv.csv")
