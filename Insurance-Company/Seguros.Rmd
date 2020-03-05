@@ -1,30 +1,526 @@
 ---
-title: "Taller seguros"
+title: "Health Insurance Workshop"
 author: "Yesid Leonardo López Sierra"
 date: "3/1/2020"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
 ```
 
-## R Markdown
+### Introducción
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Una empresa de seguros tiene como objetivo encontrar las variables que influyen a la hora de tener un seguro médico. Para esto, una firma de investigación de mercados ha suministrado datos, los cuales pertenecen a una muestra representativa de la población. Cada uno de estos registros tiene: Fecha de recolección, identificador del individuo, sexo, si es o no empleado, ingreso anual, estado civil, tipo de vivienda, número de vehículos, edad, estado de residencia y si tiene o no seguro.  
+Este informe tiene como **objetivo** plasmar los hallazgos más importantes del proceso de limpieza y preparación de los datos para identificar la calidad de los datos recolectados y, posteriormente, construir el modelo de analítica. Es por esto que el informe se divide en las siguientes secciones: **Entendimiento del negocio y origen de los datos** donde se identifica el contexto del proyecto de analítica e identifica el origen de los datos. **Detección de anomalías** donde se descubre, corrige y eliminan registros de datos erróneos de la fuente de datos. **Preparación de los datos** donde se seleccionan las características más importantes para, finalmente, analizar los datos. Por último, se presentan las **Conclusiones** de la limpieza y la preparación.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+### Entendimiento del negocio y origen de los datos
 
-```{r cars}
-summary(cars)
+Una empresa de seguros quiere identificar las variables que influyen para que una persona tenga o no un seguro médico, es por esto que el objetivo del proyecto de analítica es identificarlos, para que así la empresa centre sus esfuerzos en esas variables y aumente la venta de seguros.
+
+A continuación se presentan algunos de los registros del dataset:
+```{r echo=TRUE, paged.print=TRUE}
+# Load Dataset splitted by (;) and map the empty values ("") to NA
+insurance_dataset <-
+  read.csv2("./base_clientes.csv", na.strings = c("", "NA"))
+# Print the first 6 elements
+kable(head(insurance_dataset, 6))
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+#### Identificación de la estructura de datos
+```{r}
+# Print the data structure
+str(insurance_dataset)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Se puede observar que el tipo de estructura de estos datos corresponde a *datos de corte transversal*, ya que, como se identificará posteriormente, la fecha de recolección corresponde a un mismo periodo.
+
+### Detección de anomalías
+La estructura de datos de la sección muestra varias anomalías, a continuación se explicará cada una:
+
+#### Formato de variables incorrecto
+Los formatos de fecha, sexo y edad no corresponden al tipo de variable:
+```{r echo=TRUE}
+# Print the variable type for each feature
+cat("The variable type for date is:", class(insurance_dataset$date), "\n")
+cat("The variable type for sex is:", class(insurance_dataset$sex), "\n")
+cat("The variable type for age is:", class(insurance_dataset$age), "\n")
+cat("The variable type for vehicle is:", class(insurance_dataset$vehicle), "\n")
+```
+Por lo tanto, se cambia al formato correcto:
+```{r echo=TRUE}
+# First, convert the date as a Date format instead of a factor
+insurance_dataset$date <-
+  as.Date(insurance_dataset$date, format = "%m/%d/%Y")
+# Second, convert the sex to a factor instead of a integer because it is a qualitative value
+insurance_dataset$sex <-
+  factor(
+    insurance_dataset$sex,
+    levels = c("1", "2"),
+    labels = c("Female", "Male")
+  )
+# Third, convert vehicle to boolean because it is a yes or not value
+insurance_dataset$vehicle <- as.logical(factor(
+  insurance_dataset$vehicle,
+  levels = c("YES", "NO"),
+  labels = c("True", "False")
+))
+# Finally, convert the age as a cuantitative value instead of a qualitative. For that, cast to an integer value
+# Supressing warnings because it will cast string values to NA
+suppressWarnings(insurance_dataset$age <-
+  as.integer(as.character(insurance_dataset$age)))
+```
+Ahora, la estructura del dataset queda de la siguiente forma:
+```{r echo=FALSE}
+# Print the data structure
+str(insurance_dataset)
+```
+
+#### Duplicados
+Se busca si existen datos duplicados por id, pues este valor es un identificador único:
+```{r echo=FALSE}
+kable(table(duplicated(insurance_dataset$custid)), col.names= c("¿is duplicated?", "Frecuency"))
+```
+
+Debido a que hay datos duplicados, se procede a validar que todos sus valores estén repetidos para eliminarlos.
+```{r}
+# Find duplicated values
+duplicatedIds <- insurance_dataset$custid[duplicated(insurance_dataset$custid)]
+duplicatedDF <- subset(insurance_dataset, custid %in% duplicatedIds)
+kable(duplicatedDF)
+```
+
+Finalmente, se eliminan teniendo como resultado lo siguiente:
+```{r}
+# Due to the id should not be duplicated we delete the copies
+insurance_dataset <- unique(insurance_dataset)
+# There should not be duplicated data
+kable(table(duplicated(insurance_dataset$custid)), col.names= c("¿Duplicates?", "Frecuency"))
+```
+
+
+#### Campos Vacíos
+
+Al hacer la carga de datos, se reemplazaron los valores vacíos ("") po NAs. A continuación se imprime un resume de cada característica:
+```{r}
+# MISSING VALUES
+summary(insurance_dataset)
+```
+
+Se puede observar que hay campos vacíos para sex, is.employed, annual_incomeUSD, marital.stat, health.ins, housing.type, vehicle, num.vehicles, age y state.of.res.
+
+Primero se revisa el registro vacío para sexo:
+```{r}
+# First, let's search the only one value for sex
+missing <- insurance_dataset[which(is.na(insurance_dataset$sex)), ]
+kable(missing)
+```
+
+Debido a que es un registro que tiene muchos valores nulos, se procede a borrarlo.
+
+```{r}
+# Looks like that row has a lot of missing values for the cols, thats why that row is deleted
+library(tidyr)
+insurance_dataset <- insurance_dataset %>% drop_na(sex)
+summary(insurance_dataset)
+```
+
+La información anterior muestra que hay 4 variables con NA: is.employed, housing.type, age and num.vehicles.
+
+Para solventar los campos vacíos de la cantidad de vehículos, se analiza si hay relación entre esta variable y tener o no vehículo:
+```{r}
+# Let's try to find any relationship between NA num vehicles and vehicles:
+summary(insurance_dataset[(insurance_dataset$vehicle == FALSE & insurance_dataset$num.vehicles == 0), c("vehicle", "num.vehicles")])
+```
+
+Se puede observar que todos los 111 NAs tienen False en la columna de vehicle, por lo tanto se reemplazan como cero:
+
+```{r}
+# Override the NA to cero because if there is a NA value, then there is a False for Vehicle
+# value for the vehicle feature
+insurance_dataset$num.vehicles <-
+  ifelse(is.na(insurance_dataset$num.vehicles),
+         0,
+         insurance_dataset$num.vehicles)
+```
+
+
+Por otro lado, se reemplazaran las edades con NA por cero:
+
+```{r}
+# For NAs for age, let's save these values as 0. 
+insurance_dataset$age <-
+  ifelse(is.na(insurance_dataset$age), 0, insurance_dataset$age)
+summary(insurance_dataset)
+```
+
+Finalmente, se puede observar que hay solo dos variables con NAs: is.employed con 328 registros (33% de los datos) y housing.type con 56 (6% de los datos). Debido a que housing.type tiene un porcentaje pequeño de datos, es seguro eliminarlo. Sin embargo, no se puede hacer lo mismo con la otra variable ya que representa la tercera parte de los datos.
+
+```{r}
+# There are just two variables with NA's: is.employed with 328 (33% of the data) and
+# housing.type with 56 (6% of the data). Due to housing.type has a narrow percent of
+# the data it is safe to drop these customers, but not for is.employed because
+# it is the third part of the data.
+insurance_dataset <- insurance_dataset %>% drop_na(housing.type)
+```
+
+Para la variable is.employed se llena con un nuevo valor que se llama otro. Este nuevo valor representa a aquellas personas que no pertenecen al mundo laboral, aquí se agrupan los estudiantes, retirados, los que no reciben dinero, etc.
+
+```{r}
+# For is.employed let's replace the NA's for a new value that encodes for someone who is
+# not in active in the actual workforce
+insurance_dataset$is.employed <-
+  ifelse(
+    is.na(insurance_dataset$is.employed),
+    "Other",
+    ifelse(
+      insurance_dataset$is.employed == TRUE,
+      "Employee",
+      "Not Employee"
+    )
+  )
+insurance_dataset$is.employed <-
+  factor(insurance_dataset$is.employed)
+```
+
+Finalmente, se tiene como resultado de esta sección lo siguiente un conjunto de datos sin valores vacíos. Sin embargo, como se observará posteriormente, hay ciertos datos que no tienen mucho sentido. En la siguiente sección se descubrirán y se trataran a este tipo de datos.
+
+#### Outliers
+
+```{r echo=FALSE}
+summary(insurance_dataset)
+```
+
+Para tener más información de los datos atípicos se usa el diagrama de caja donde se representan mediante círculos.
+
+La primera variable a tratar es el ingreso anual. Primero se cambia la unidad de la variable dividiendo por 1000 y quedando expresados los valores en miles de dólares.
+
+```{r}
+# let's create some box plots to find outliers
+# First, change the annal_income unit dividing by 1000
+insurance_dataset$annual_incomeUSD <-
+  insurance_dataset$annual_incomeUSD / 1000
+
+```
+
+Después, se genera una visualización del ingreso anual expresado en miles de dólares:
+
+```{r}
+# When the plot is generated, the outliers are more visible
+outliers_results <- boxplot(insurance_dataset$annual_incomeUSD)
+```
+
+La cantidad de datos atípicos encontrados son: 
+
+```{r}
+cat("There are", length(outliers_results$out), "outliers")
+```
+
+En este caso se imputa con la mediana los outliers:
+
+```{r}
+# Then let's use simple imputation to replace the annual income outliers for the annual income median
+insurance_dataset$annual_incomeUSD <-
+  ifelse(
+    insurance_dataset$annual_incomeUSD %in% outliers_results$out,
+    median(insurance_dataset$annual_incomeUSD),
+    insurance_dataset$annual_incomeUSD
+  )
+# Then the plot has less outliers now
+outliers_results <- boxplot(insurance_dataset$annual_incomeUSD)
+cat("There are", length(outliers_results$out), "outliers")
+```
+
+Ahora la cantidad de datos atípicos se redujo a `r length(outliers_results$out)` datos. Debido a que corresponde al `r (length(outliers_results$out)/942)*100`% de los datos, se deja hasta ese punto.
+
+La segunda variable con datos atípicos es la edad:
+
+```{r}
+# The second value with outliers is age
+outliers_results <- boxplot(insurance_dataset$age)
+cat("There are", length(outliers_results$out), "outliers")
+```
+
+Se hace imputación simple con la mediana:
+
+```{r}
+# then impute values using the median too
+insurance_dataset$age <-
+  ifelse(
+    insurance_dataset$age %in% outliers_results$out,
+    median(insurance_dataset$age),
+    insurance_dataset$age
+  )
+```
+
+Obteniendo como resultado un diagrama sin outliers:
+
+```{r}
+# Then the plot has not outliers now
+outliers_results <- boxplot(insurance_dataset$age)
+```
+
+#### Valores inválidos
+
+En esta sección se tratan a aquellos valores que no corresponden al rango de los valores de la variable.
+
+```{r echo=FALSE}
+summary(insurance_dataset)
+```
+
+La primera a variable a tratar es el ingreso anual pues tiene valores como se puede observar an la tabla anterior, annual_income tiene como valor mínimo un ingreso negativo (cosa que no puede pasar pues el ingreso es la suma de ingresos laborales y no laborales (remesas, subsidios, etc)), además, tiene como valor máximo un ingreso demasiado grande que puede corresponder a, por ejemplo, un Bill Gates con ingresos exorbitantes. 
+
+En este caso se imputa con la mediana esos valores inválidos:
+
+```{r}
+# INVALID VALUES
+# First, let's impute with the median those data with income <= 0
+insurance_dataset$annual_incomeUSD <-
+  ifelse(
+    insurance_dataset$annual_incomeUSD <= 0,
+    median(insurance_dataset$annual_incomeUSD),
+    insurance_dataset$annual_incomeUSD
+  )
+```
+
+La siguiente variable a analizar es aquellos registron con una cantidad de vehículos superior a cero pero con FALSE en la columna de Vehículo;
+
+```{r}
+# Second, delete the row with inconsistency because
+# it has no vehicule but with 4 num vehicles at the same time
+kable(insurance_dataset[insurance_dataset$vehicle == FALSE &
+                    insurance_dataset$num.vehicles > 0,])
+```
+
+En este caso se borra el registro:
+
+```{r}
+insurance_dataset <-
+  insurance_dataset[!(insurance_dataset$vehicle == FALSE &
+                        insurance_dataset$num.vehicles > 0),]
+```
+
+La variable state.of.res tiene valores inconsistentes, estos comprenden espacios de más al inicio o al final, o estados con nombres incompletos como " New York", "NewYork", "Suth Caroli", etc:
+
+```{r}
+# Third, trim state.of.res values because there are repited values
+# that start or finishwith a whitespace. For example, New york
+summary(insurance_dataset$state.of.res)
+```
+
+Se procede a arreglarlas:
+
+```{r}
+insurance_dataset$state.of.res <-
+  factor(trimws(insurance_dataset$state.of.res))
+# Finally there are some typo for the states, like this one so let's fix them one by one
+
+# Fixing North Carolina
+library(plyr)
+insurance_dataset$state.of.res <-
+  revalue(insurance_dataset$state.of.res,
+          c("North Caroli" = "North Carolina"))
+
+# Fixing South Carolina
+insurance_dataset$state.of.res <-
+  revalue(insurance_dataset$state.of.res,
+          c("South Caroli" = "South Carolina"))
+
+# Fixing Arizona
+insurance_dataset$state.of.res <-
+  revalue(insurance_dataset$state.of.res, c("Arizo" = "Arizona"))
+
+# Fixing Indiana
+insurance_dataset$state.of.res <-
+  revalue(insurance_dataset$state.of.res, c("India" = "Indiana"))
+
+# Fixing New York
+insurance_dataset$state.of.res <-
+  revalue(insurance_dataset$state.of.res, c("NewYork" = "New York"))
+
+# Fixing Louisiana
+insurance_dataset$state.of.res <-
+  revalue(insurance_dataset$state.of.res, c("Louisia" = "Louisiana"))
+
+# Fixing Montana
+insurance_dataset$state.of.res <-
+  revalue(insurance_dataset$state.of.res, c("Monta" = "Montana"))
+```
+
+Se tiene como resultado lo siguiente:
+
+```{r}
+summary(insurance_dataset$state.of.res)
+```
+
+### Preparación de los datos
+
+Primero, se borra la columna de fechas debido que no es una variable que influya en tener un seguro. Además, debido a quelos rangos de las fechas solo difieren en 4 días no se puede inferir que la columna hace referencia a periodos de tiempo.  
+
+```{r}
+summary(factor(as.character(insurance_dataset$date)))
+```
+
+Se borra la columna: 
+
+```{r}
+# PREPROCESSING STEP
+# Delete date column because it does not have a big range between dates
+# also does not provide us enough value
+insurance_dataset <-
+  insurance_dataset[, names(insurance_dataset) != "date"]
+```
+
+Lo mismo pasa con el id del cliente pues debido a que corresponde a valores únicos de cada individuo no influye en la variable objetivo: 
+
+```{r}
+# The same for custid because it is unique and for the vehicle col because can be inferred with num.vehicles
+insurance_dataset <-
+  insurance_dataset[, !names(insurance_dataset) %in% c("custid", "vehicle")]
+
+```
+
+Se procede a crear una nueva columna que dice si una persona es dueña o no de una casa independientemente de que haya o no pagado el crédito: 
+
+```{r}
+# Add is.house.owner column if it is Homeowner free and clear or Homeowner with mortgage/loan
+insurance_dataset$is.house.owner <-
+  ifelse(
+    insurance_dataset$housing.type %in% c("Homeowner free and clear", "Homeowner with mortgage/loan"),
+    T,
+    F
+  )
+```
+
+Finalmente se añade una nueva columna que agrupa los estados por las 4 regiones que utiliza el Bureau de Estadísticas de EEUU:
+
+```{r echo=FALSE}
+northeast <-
+  c(
+    "Connecticut",
+    "Maine",
+    "Massachusetts",
+    "New Hampshire",
+    "Rhode Island",
+    "Vermont",
+    "New Jersey",
+    "New York",
+    "Pennsylvania"
+  )
+midwest <-
+  c(
+    "Illinois",
+    "Indiana",
+    "Michigan",
+    "Ohio",
+    "Wisconsin",
+    "Iowa",
+    "Kansas",
+    "Minnesota",
+    "Missouri",
+    "Nebraska",
+    "North Dakota",
+    "South Dakota"
+  )
+south <-
+  c(
+    "Delaware",
+    "Florida",
+    "Georgia",
+    "Maryland",
+    "North Carolina",
+    "South Carolina",
+    "Virginia",
+    "West Virginia",
+    "Alabama",
+    "Kentucky",
+    "Mississippi",
+    "Tennessee",
+    "Arkansas",
+    "Louisiana",
+    "Oklahoma",
+    "Texas"
+  )
+west <-
+  c(
+    "Arizona",
+    "Colorado",
+    "Idaho",
+    "Montana",
+    "Nevada",
+    "New Mexico",
+    "Utah",
+    "Wyoming",
+    "Alaska",
+    "California",
+    "Hawaii",
+    "Oregon",
+    "Washington"
+  )
+```
+
+```{r}
+# Finally, add bureau.cardinal.point that groups some states
+insurance_dataset$bureau.cardinal.point = ifelse(
+  insurance_dataset$state.of.res %in% northeast,
+  "Northeast",
+  ifelse(
+    insurance_dataset$state.of.res %in% midwest,
+    "Midwest",
+    ifelse(
+      insurance_dataset$state.of.res %in% south,
+      "South",
+      ifelse(insurance_dataset$state.of.res %in% west,
+             "West",
+             "NA")
+    )
+  )
+)
+insurance_dataset$bureau.cardinal.point = factor(insurance_dataset$bureau.cardinal.point)
+```
+
+Se procede a borrar la columna de state.of.res pues la variable anterior se encarga de agrupar sus valores: 
+
+```{r}
+# Delete state.of.res because bureau.cardinal.point creates a set
+# for these values
+insurance_dataset <-
+  insurance_dataset[, names(insurance_dataset) != "state.of.res"]
+```
+
+Finalmente, se reordena las columnas por temas y se obtiene lo siguiente:
+
+```{r}
+# Now, the work is done by reordering the column names
+insurance_dataset <-
+  insurance_dataset[, c(
+    "sex",
+    "age",
+    "marital.stat",
+    "housing.type",
+    "is.house.owner",
+    "bureau.cardinal.point",
+    "is.employed",
+    "annual_incomeUSD",
+    "num.vehicles",
+    "health.ins"
+  )]
+
+# Thes are the results!
+str(insurance_dataset)
+summary(insurance_dataset)
+kable(head(insurance_dataset))
+```
+
+### Conclusiones
+
+A continuación se presentan los hallazgos encontrados del proceso de limpieza y preparación de los datos. Lo primero que se pudo encontrar era la existencia de dos registros duplicados, se pudo encontrar una gran cantidad de datos vacíos, entre estos, se resaltan principalmente dos variables: si es empleado o no, y el tipo de hogar del individuo. Se pudo encontrar que cerca de la tercera parte de los datos carecía de un valor para saber si era empleado o no, por lo tanto, se creó una nueva variable que tiene como objetivo representar a las personas que no pertenecen este segmento laboral, por ejemplo, estudiantes, retirados, personas que no reciben dinero, etc. Por otro lado, debido a que las personas que no tenían un tipo de hogar registrado se procedió a eliminar los registros pues solo representaban al 6% de los individuos.
+Al buscar aquellos registros con datos atípicos, resaltaron principalmente dos variables, el ingreso anual y la edad. Estos fueron tratados de la forma correcta al imputar con la mediana, sin embargo, la variabilidad de la variable del ingreso anual hace muy difícil eliminar los outliers por completo.
+También se pudo encontrar valores inválidos, entre ellos, el ingreso anual presentaba valores demasiado grandoes y otros menores o iguales a cero. Tambíen, la existencia de estados de los individuos con errores de digitación.
+Posteriormente, en la etapa de procesamiento de los datos se crearon nuevas variables como si es o no dueño de vivienda y otra que agrupa los estados por las 4 regiones que utiliza el Bureau de Estadísticas de EEUU. También se eliminaron variables no influían en la variable objetivo (identificación, fecha) y otras que fueron eliminadas porque habían otras variables eran inferidas de otras variables (si tiene vehículo o no, y los estados de residencia).
+
+Finalmente, como recomendación se pide a la empresa que revise los valores que corresponde a la variable de ingreso anual por lo que se mencionó anteriormente (outliers y valores inconsistentes) y la cantidad de datos faltantes en la variable de is.employed.Además, se le pide tener cuidado a la hora de digitar/pasar la información (debido a lo evidenciado con los estados de residencia). Por último, se pide recolectar más datos para ampliar el dataset y tener un mejor modelo de clasificación. Sin embargo, con el resultado obtenido de la limpieza y preparación es suficiente para construir la primera versión del modelo.
