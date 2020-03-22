@@ -43,9 +43,10 @@ insurance_dataset$vehicle <- as.logical(factor(
   labels = c("True", "False")
 ))
 # Finally, convert age as a cuantitative value instead of a qualitative. For that, cast to an integer value
+insurance_dataset[insurance_dataset$custid == 17946,]
 suppressWarnings(insurance_dataset$age <-
                    as.integer(as.character(insurance_dataset$age)))
-
+insurance_dataset[insurance_dataset$custid == 17946,]
 # Now, when we print the structure again we will see that features are using the right format
 str(insurance_dataset)
 
@@ -83,7 +84,7 @@ insurance_dataset$num.vehicles <-
          0,
          insurance_dataset$num.vehicles)
 summary(insurance_dataset)
-# For NAs for age, let's save these values as 0. 
+# For NAs for age, let's save these values as 0.
 insurance_dataset$age <-
   ifelse(is.na(insurance_dataset$age), 0, insurance_dataset$age)
 

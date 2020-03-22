@@ -1,0 +1,410 @@
+---
+title: "Factores de éxito en la Liga Premier"
+author: "Mario Micolta  - Yesid López"
+date: "Marzo de 2020"
+output:
+  html_document: default
+  pdf_document: default
+subtitle: Limpieza de Datos y Preparación de Datos
+---
+
+
+<script>
+   $(document).ready(function() {
+     $head = $('#header');
+     $head.prepend('<img src=\"icesi.png\" style=\"float: right;width: 350px;\"/>')
+   });
+</script>
+
+___
+
+```{r setup, include=FALSE, echo = FALSE, warning=FALSE, message=FALSE}
+
+#Load Packages.
+library(tidyverse)
+library(inspectdf)
+library(ggthemes)
+library(readxl)
+library(lubridate)
+
+```
+
+
+
+# {.tabset .tabset-pills}
+
+
+
+## Carga de los datos
+
+___
+
+### Carga de datos
+***
+
+Se cargan los datos utilizando el paquete readxl
+
+
+```{r loadData, warning=FALSE, message=FALSE}
+
+#Cargamos los datos
+datos <- read_excel('ligainglesa1819.xlsx')
+
+
+#Imprimimos los 10 primeros datos
+head(datos, 10)
+
+
+```
+
+
+***
+
+
+## Identificación de la estructura de los datos
+
+
+### Identificación de la estructura de los datos
+***
+
+
+Se describe los tipos de variable que contiene la base de datos y se define la estructura de la misma.
+
+
+```{r estructura}
+str(datos)
+```
+
+En el resultado anterior se puede observar que la base de datos contiene **`r nrow(datos)`** registros y un total de **`r ncol(datos)`** variables.
+
+### Hallazgos:
+
+* Las filas representan partidos de fútbol de la Premier League en la temporada 18-19
+* Las columnas describen los eventos ocurridos durante cada partido.
+* Se observa que la estructura de los datos es de **Corte Transversal**.
+* Existen columnas que no tienen los tipos de variable correctos.
+
+
+***
+
+
+### Tipos de variables
+***
+
+
+En el paso anterior se observaron variables con un tipo distinto al de su naturaleza.
+
+Se procede a cambiarlas:
+
+```{r tiposVariables}
+
+datos$Date <- as.Date(datos$Date)
+datos$HomeTeam <- as.factor(datos$HomeTeam)
+datos$AwayTeam <- as.factor(datos$AwayTeam)
+datos$FTHG <- as.integer(datos$FTHG)
+datos$FTAG <- as.integer(datos$FTAG)
+datos$FTR <- as.factor(datos$FTR)
+datos$HS <- as.integer(datos$HS)
+datos$AS <- as.integer(datos$AS)
+datos$HST <- as.integer(datos$HST)
+datos$AST <- as.integer(datos$AST)
+datos$HF <- as.integer(datos$HF)
+datos$AF <- as.integer(datos$AF)
+datos$HC <- as.integer(datos$HC)
+datos$AC <- as.integer(datos$AC)
+datos$HY <- as.integer(datos$HY)
+datos$AY <- as.integer(datos$AY)
+datos$HR <- as.integer(datos$HR)
+datos$AR <- as.integer(datos$AR)
+
+
+```
+
+```{r}
+head(datos)
+```
+
+
+Se verifica nuevamente los tipos de variable
+
+```{r}
+sapply(datos, class)
+
+```
+
+
+
+
+***
+
+
+
+## Detección de anomalías
+
+
+
+### Descripción de los datos
+***
+
+
+```{r}
+summary(datos)
+```
+
+
+
+### Fechas
+***
+
+```{r}
+
+table(year(datos$Date))
+
+```
+
+Se identificó un partido con fecha de juego en el año 2026. 
+
+
+```{r}
+
+datos %>% filter(year(Date) == '2026')
+
+
+```
+Se buscó en la web la fecha original de realización del partido y se imputó. 
+
+La fecha real de realización del partido fue en el año 2019.
+
+```{r}
+
+datos <- datos %>% mutate(
+  Date = replace(Date, year(Date) == '2026', '2019-05-12')
+)
+```
+
+
+
+
+
+### Goles en casa
+***
+
+```{r}
+
+datos %>% count(FTHG)
+
+```
+Se puede observar en la tabla anterior un valor nulo en los goles marcados por el equipo local. Además se observan posibles datos atípicos.
+
+```{r}
+
+datos %>% filter(is.na(FTHG))
+
+
+```
+Al observar el detalle del partido que presenta un valor nulo en los goles del equipo local, también se observa que el equipo visitante tiene valor nulo en los goles marcados
+
+
+Como se hizo anteriormente, se busca el resultado verdadero en la web. Se halló que el resultado fue de 2 - 1 a favor de Wolves.
+
+Se procede a imputar estos datos.
+
+```{r}
+
+datos <- datos %>% mutate(
+  FTHG = replace(FTHG, is.na(FTHG), 1),
+  FTAG = replace(FTAG, is.na(FTAG), 2)
+)
+
+```
+
+
+Se observa el posible valor atípico.
+
+```{r}
+datos %>% filter(FTHG == 14)
+```
+
+Se observa que en el partido entre Arsenal y Man United se marcaron 28 goles en total, lo que posiblemente sea un dato atípico.
+
+Se procede a buscar el resultado verdadero en la Web.
+
+El resultado fue de 2 - 0 a favor del Arsenal.
+
+Se procede a imputar estos datos
+
+
+```{r}
+
+datos <- datos %>% mutate(
+  FTHG = replace(FTHG, FTHG == 14, 2),
+  FTAG = replace(FTAG, FTAG == 14, 0)
+)
+
+datos$FTR <- factor(ifelse(datos$HomeTeam == "Arsenal" & datos$AwayTeam=="Man United", "H", as.character(datos$FTR)))
+```
+
+
+### Resultado Final
+***
+
+Se observa el comportamiento de esta variable
+
+```{r}
+
+datos %>% count(FTR) 
+
+```
+
+Se puede observar que existen dos variables con errores de digitación.
+
+Se procede a arreglarlas:
+
+```{r}
+datos <- datos %>% mutate(
+  FTR = replace(FTR, FTR == 'd', 'D'),
+  FTR = replace(FTR, FTR == 'h', 'H'),
+)
+```
+
+
+
+
+
+
+***
+
+
+
+
+## Transformación de los datos
+
+### Transformación de los datos
+***
+
+Como se puede observar a continuación, la suma de goles de visitante y casa deven ser: 
+```{r}
+sum(datos$FTHG, datos$FTAG)
+```
+
+A continuación, para tener información más precisa de cada equipo siendo, se hace lo siguiente:
+
+```{r transformacion}
+ 
+provisional <- datos%>% mutate(
+  HomeTeam = datos$AwayTeam,
+  AwayTeam = datos$HomeTeam,
+  FTHG = datos$FTAG,
+  FTAG = datos$FTHG,
+  FTR = ifelse(FTR == 'H', 'A', ifelse(FTR == 'A', 'H', 'D')),
+  HS = datos$AS,
+  AS = datos$HS,
+  HST = datos$AST,
+  AST = datos$HST,
+  HF = datos$AF,
+  AF = datos$HF,
+  HC = datos$AC,
+  AC = datos$HC,
+  HY = datos$AY,
+  AY = datos$HY,
+  HR = datos$AR,
+  AR = datos$HR,
+  B365H = datos$B365A,
+  B365A = datos$B365H,
+  BWH = datos$BWA,
+  BWA = datos$BWH
+)
+
+datos <- rbind(datos, provisional)
+
+datos %>% arrange(Date)
+
+#Por alguna razón desconocida la cantidad de goles anotados por locales y visitantes se convirtió a numeric.
+datos$FTHG <- as.integer(datos$FTHG)
+datos$FTAG <- as.integer(datos$FTAG)
+
+```
+
+Se valida que se haya transformada la tabla correctamente pues la suma de los goles debe ser 1072
+
+```{r}
+sum(datos$FTAG)
+```
+
+
+
+
+
+***
+
+
+## Preparación de los datos
+
+
+### Preparación de los datos
+***
+
+
+### Creación de nuevas variables
+```{r}
+head(datos)
+```
+
+A continucación se importa el nuevo dataset pero se selecciona solo las siguientes variables adicionales:  
+
+- HTHG = Half Time Home Team Goals
+- HTAG = Half Time Away Team Goals
+- HTR = Half Time Result (H=Home Win, D=Draw, A=Away Win)
+
+```{r}
+new_data= read.csv("aditional-data.csv")
+new_data$Date <- as.Date(new_data$Date, "%d/%m/%Y")
+new_data <- new_data[, c("Date","HomeTeam","AwayTeam", "HTHG", "HTAG", "HTR")]
+head(new_data,20)
+```
+
+Una vez hecho lo anterior, se procede a combinar las nuevas variables a nuestro dataset original:
+
+```{r}
+first_final_data <- merge(x=datos, y=new_data)
+
+
+homeTemp <-new_data$HomeTeam
+awayTemp <-new_data$AwayTeam
+new_data$HomeTeam <- awayTemp
+new_data$AwayTeam <- homeTemp
+second_final_data <- merge(x=datos, y=new_data)
+final_data <- rbind(first_final_data, second_final_data)
+```
+
+Tenemos como resultado lo siguiente:
+
+```{r}
+summary(final_data)
+```
+
+### Borrado de variables
+
+Debido a que el árbitro no debería ser un factor diferenciador, se borra como variable. Lo mismo con div pues todas tienen las mismas divisiones:
+
+```{r}
+final_data <- final_data %>% select(-c(Referee, Div))
+```
+
+
+### Renombremiento de columnas
+
+Se renombre las siguientes columnas pues su significado cambia después de la transformación:
+
+```{r}
+names(final_data)[names(final_data) == "HomeTeam"] <- "Team"
+names(final_data)[names(final_data) == "AwayTeam"] <- "Rival"
+```
+
+
+El resultado final es el siguiente:
+```{r}
+head(final_data)
+str(final_data)
+summary(final_data)
+```
