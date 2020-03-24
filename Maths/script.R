@@ -1,6 +1,29 @@
 library(ggplot2)
 library(DataExplorer)
-
+library(dplyr)
+library(ggthemes)
+library(psych)
+library(summarytools)
+#####
+library(car)
+#install.packages("nortest")
+library(nortest)
+#install.packages("corrplot")
+library(corrplot)
+library(fitur)
+library(ggplot2)
+library(directlabels)
+library(ggthemes)
+library(scales)
+library(gridExtra)
+library(stats)
+library(readxl)
+library(reshape2)
+library(dplyr)
+library(BSDA)
+library(e1071)
+library(Hmisc)
+#####
 load("performance.RData")
 
 data <- base_f
@@ -64,6 +87,33 @@ data <- data %>% mutate(
 str(data)
 summary(data)
 
-# Variable dependiente
+
+# ANÁLISIS UNIVARIADO
+
+describe_quantitative(data, data$G3)
+# Tabla de información
+data %>% select(age, G3) %>% describe(IQR = TRUE, quant = c(.25,.75))
+
+# G3
+# Diagrama de caja
+data %>% ggplot(aes(y=G3)) + 
+  geom_boxplot(outlier.colour="red", outlier.shape=8, outlier.size=4) +
+  theme_base() +
+  theme(axis.text.x=element_blank(),axis.ticks.x=element_blank()) 
+
+# Histograma
+ggplot(data, aes(x=G3)) + 
+  geom_histogram(bins=1+3.322*log(nrow(data)), aes(y=..density..), colour="black", fill="white")+
+  geom_vline(aes(xintercept=mean(G3)), color="blue", linetype="dashed", size=1)+
+  geom_density(alpha=.2, fill="#FF6666")
+
+#Prueba de normalidad:
+qqPlot(data$G3)
+shapiro.test(data$G3)
+
+# Internet
+freq(data$internet)
+
+
 create_report(data)
 
