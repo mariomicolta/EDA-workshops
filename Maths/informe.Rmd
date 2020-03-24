@@ -7,24 +7,78 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(DataExplorer)
+library(dplyr)
 ```
 
 ## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+```{r}
+load("performance.RData")
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+data <- base_f
+head(data)
 
-```{r cars}
-summary(cars)
+str(data)
+summary(data)
+
+# Casting to factor
+data <- data %>% mutate(
+  Medu = factor(ifelse(
+    Medu == 1, "None or primary education (4th grade)",
+    ifelse(
+      Medu == 2, "5th to 9th grade",
+      ifelse(
+        Medu == 3, "secondary education",
+        ifelse(
+          Medu == 4, "higher education",
+          NA
+        )
+      )
+    )
+  )),
+  Fedu = factor(ifelse(
+    Fedu == 1, "None or primary education (4th grade)",
+    ifelse(
+      Fedu == 2, "5th to 9th grade",
+      ifelse(
+        Fedu == 3, "secondary education",
+        ifelse(
+          Fedu == 4, "higher education",
+          NA
+        )
+      )
+    )
+  )),
+  traveltime = factor(ifelse(
+    traveltime == 1, "<15 min.",
+    ifelse(
+      traveltime == 2, "15 to 30 min.",
+      ifelse(
+        traveltime == 3, ">30 min.",
+        NA
+      )
+    )
+  )),
+  absences = factor(ifelse(
+    absences == 1, "0 to 5 absences",
+    ifelse(
+      absences == 2, "6 to 10 absences",
+      ifelse(
+        absences == 3, "11 to 20 absences",
+        ifelse(
+          absences == 4, ">20 absences",
+          NA
+        )
+      )
+    )
+  ))
+)
+str(data)
+summary(data)
+
+# Variable dependiente
+create_report(data)
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

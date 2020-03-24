@@ -1,3 +1,6 @@
+library(ggplot2)
+library(DataExplorer)
+
 load("performance.RData")
 
 data <- base_f
@@ -61,4 +64,6 @@ data <- data %>% mutate(
 str(data)
 summary(data)
 
+# Variable dependiente
+create_report(data)
 
