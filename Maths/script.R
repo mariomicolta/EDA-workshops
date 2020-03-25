@@ -3,12 +3,12 @@ library(DataExplorer)
 library(dplyr)
 library(ggthemes)
 library(psych)
-library(summarytools)
-#####
-library(car)
-#install.packages("nortest")
+library(funModeling)
 library(nortest)
-#install.packages("corrplot")
+library(knitr)
+
+library(car)
+library(nortest)
 library(corrplot)
 library(fitur)
 library(ggplot2)
@@ -22,8 +22,7 @@ library(reshape2)
 library(dplyr)
 library(BSDA)
 library(e1071)
-library(Hmisc)
-#####
+
 load("performance.RData")
 
 data <- base_f
@@ -90,30 +89,49 @@ summary(data)
 
 # ANÁLISIS UNIVARIADO
 
-describe_quantitative(data, data$G3)
-# Tabla de información
-data %>% select(age, G3) %>% describe(IQR = TRUE, quant = c(.25,.75))
 
 # G3
-# Diagrama de caja
+
+## Tabla de información G3
+data %>% select(age, G3) %>% psych::describe(IQR = TRUE, quant = c(.25,.75))
+
+## Diagrama de caja
 data %>% ggplot(aes(y=G3)) + 
   geom_boxplot(outlier.colour="red", outlier.shape=8, outlier.size=4) +
   theme_base() +
   theme(axis.text.x=element_blank(),axis.ticks.x=element_blank()) 
 
-# Histograma
+## Histograma
 ggplot(data, aes(x=G3)) + 
   geom_histogram(bins=1+3.322*log(nrow(data)), aes(y=..density..), colour="black", fill="white")+
   geom_vline(aes(xintercept=mean(G3)), color="blue", linetype="dashed", size=1)+
   geom_density(alpha=.2, fill="#FF6666")
 
-#Prueba de normalidad:
+## Prueba de normalidad:
 qqPlot(data$G3)
 shapiro.test(data$G3)
 
 # Internet
-freq(data$internet)
 
+## Tabla de frecuencia
+internet_table <- freq(data$internet, plot = FALSE)
+internet_table 
 
-create_report(data)
+## Diagrama de barras de frecuencia
+internet_table %>% ggplot(aes(x=var, y= percentage)) +
+  geom_bar(stat = "identity", fill="steelblue", color="black") +
+  labs(x="Internet", y="Frecuencia") +
+  scale_y_continuous(limits = c(0,100), breaks = seq(0,100,20))
+  
+
+## Diagrama de torta
+internet_table %>% ggplot(aes(x=2, y=percentage, fill=var)) +
+  geom_bar(stat="identity", width=1, color="black") +
+  coord_polar("y", start=0) +
+  labs(fill="Acceso a Internet") + 
+  theme_void() +
+  geom_text(aes(label = percent(percentage)),position = position_stack(vjust = 0.5),color = "white", size=5) +
+  xlim(0.5, 2.5) 
+
+#create_report(data)
 
