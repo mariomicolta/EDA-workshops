@@ -118,10 +118,9 @@ internet_table <- freq(data$internet, plot = FALSE)
 internet_table 
 
 ## Diagrama de barras de frecuencia
-internet_table %>% ggplot(aes(x=var, y= percentage)) +
+internet_table %>% ggplot(x=2, aes(x=var, y= frequency)) +
   geom_bar(stat = "identity", fill="steelblue", color="black") +
-  labs(x="Internet", y="Frecuencia") +
-  scale_y_continuous(limits = c(0,100), breaks = seq(0,100,20))
+  labs(x="Internet", y="Frecuencia") 
   
 
 ## Diagrama de torta
@@ -130,8 +129,48 @@ internet_table %>% ggplot(aes(x=2, y=percentage, fill=var)) +
   coord_polar("y", start=0) +
   labs(fill="Acceso a Internet") + 
   theme_void() +
-  geom_text(aes(label = percent(percentage)),position = position_stack(vjust = 0.5),color = "white", size=5) +
+  geom_text(aes(label = percent(percentage/100)),position = position_stack(vjust = 0.5),color = "white", size=5) +
   xlim(0.5, 2.5) 
 
-#create_report(data)
+# Reason
+
+## Tabla de frecuencia
+internet_table <- freq(data$reason, plot = FALSE)
+internet_table 
+
+## Diagrama de barras de frecuencia
+internet_table %>% ggplot(x=2, aes(x=var, y= frequency)) +
+  geom_bar(stat = "identity", fill="steelblue", color="black") +
+  labs(x="Reason", y="Frecuencia") 
+
+## Diagrama de torta
+internet_table %>% ggplot(aes(x=2, y=percentage, fill=var)) +
+  geom_bar(stat="identity", width=1, color="black") +
+  coord_polar("y", start=0) +
+  labs(fill="Reason") + 
+  theme_void() +
+  geom_text(aes(label = percent(percentage/100)),position = position_stack(vjust = 0.5),color = "white", size=5) +
+  xlim(0.5, 2.5) 
+
+
+# Inasistencias
+
+## Tabla de frecuencia
+internet_table <- freq(data$absences, plot = FALSE)
+internet_table 
+
+## Diagrama de barras de frecuencia
+internet_table %>% ggplot(x=2, aes(x=var, y= frequency)) +
+  geom_bar(stat = "identity", fill="steelblue", color="black") +
+  labs(x="Internet", y="Inasistencias") 
+
+
+## Diagrama de torta
+internet_table %>% ggplot(aes(x=2, y=percentage, fill=var)) +
+  geom_bar(stat="identity", width=1, color="black") +
+  coord_polar("y", start=0) +
+  labs(fill="Inasistencias") + 
+  theme_void() +
+  geom_text(aes(label = percent(percentage/100)),position = position_stack(vjust = 0.5),color = "white", size=5) +
+  xlim(0.5, 2.5) 
 
