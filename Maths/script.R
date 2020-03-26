@@ -174,3 +174,61 @@ internet_table %>% ggplot(aes(x=2, y=percentage, fill=var)) +
   geom_text(aes(label = percent(percentage/100)),position = position_stack(vjust = 0.5),color = "white", size=5) +
   xlim(0.5, 2.5) 
 
+# ANÁLISIS BIVARIADO
+
+# Internet vs G3
+internet_G3 <- data %>% select(G3, internet)
+
+## Tabla descriptiva
+psych::describeBy(internet_G3, internet_G3$internet, mat=TRUE, IQR = TRUE, quant = c(.25,.75), digits=4 ) %>% 
+  na.omit() %>%
+  select(-item, -vars) %>%
+  rename(category = group1)
+
+## Prueba Kruskal-Wallis
+kruskal.test(G3~internet,data=internet_G3)  # Medias iguales
+
+## Diagrama de barras
+internet_G3 %>% ggplot(aes(x=internet, y=G3))+
+  geom_boxplot(fill="orange")+
+  labs(y="Nota final matemáticas")+
+  theme_base()
+
+# Reason vs G3
+reason_G3 <- data %>% select(G3, reason)
+
+## Tabla descriptiva
+psych::describeBy(reason_G3, reason_G3$reason, mat=TRUE, IQR = TRUE, quant = c(.25,.75), digits=4 ) %>% 
+  na.omit() %>%
+  select(-item, -vars) %>%
+  rename(category = group1)
+
+## Prueba Kruskal-Wallis
+kruskal.test(G3~reason, data=reason_G3)  # Medias iguales
+
+## Diagrama de barras
+reason_G3 %>% ggplot(aes(x=reason, y=G3))+
+  geom_boxplot(fill="orange")+
+  labs(y="Nota final matemáticas")+
+  theme_base()
+
+# Abscences vs G3
+absences_G3 <- data %>% select(G3, absences)
+
+## Tabla descriptiva
+psych::describeBy(absences_G3, absences_G3$absences, mat=TRUE, IQR = TRUE, quant = c(.25,.75), digits=4 ) %>% 
+  na.omit() %>%
+  select(-item, -vars) %>%
+  rename(category = group1)
+
+## Prueba Kruskal-Wallis
+kruskal.test(G3~absences, data=absences_G3)  # Medias diferentes
+
+## Prueba Wilcoxon
+pairwise.wilcox.test(x=absences_G3$G3,g=absences_G3$absences) # INTERPRETAR RESULTADOS!
+
+## Diagrama de barras
+absences_G3 %>% ggplot(aes(x=absences, y=G3))+
+  geom_boxplot(fill="orange")+
+  labs(y="Nota final matemáticas")+
+  theme_base()
