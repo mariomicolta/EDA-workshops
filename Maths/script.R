@@ -3,12 +3,12 @@ library(DataExplorer)
 library(dplyr)
 library(ggthemes)
 library(psych)
-library(summarytools)
-#####
-library(car)
-#install.packages("nortest")
+library(funModeling)
 library(nortest)
-#install.packages("corrplot")
+library(knitr)
+
+library(car)
+library(nortest)
 library(corrplot)
 library(fitur)
 library(ggplot2)
@@ -22,8 +22,7 @@ library(reshape2)
 library(dplyr)
 library(BSDA)
 library(e1071)
-library(Hmisc)
-#####
+
 load("performance.RData")
 
 data <- base_f
@@ -90,30 +89,146 @@ summary(data)
 
 # ANÁLISIS UNIVARIADO
 
-describe_quantitative(data, data$G3)
-# Tabla de información
-data %>% select(age, G3) %>% describe(IQR = TRUE, quant = c(.25,.75))
 
 # G3
-# Diagrama de caja
+
+## Tabla de información G3
+data %>% select(age, G3) %>% psych::describe(IQR = TRUE, quant = c(.25,.75))
+
+## Diagrama de caja
 data %>% ggplot(aes(y=G3)) + 
   geom_boxplot(outlier.colour="red", outlier.shape=8, outlier.size=4) +
   theme_base() +
   theme(axis.text.x=element_blank(),axis.ticks.x=element_blank()) 
 
-# Histograma
+## Histograma
 ggplot(data, aes(x=G3)) + 
   geom_histogram(bins=1+3.322*log(nrow(data)), aes(y=..density..), colour="black", fill="white")+
   geom_vline(aes(xintercept=mean(G3)), color="blue", linetype="dashed", size=1)+
   geom_density(alpha=.2, fill="#FF6666")
 
-#Prueba de normalidad:
+## Prueba de normalidad:
 qqPlot(data$G3)
 shapiro.test(data$G3)
 
 # Internet
-freq(data$internet)
+
+## Tabla de frecuencia
+internet_table <- freq(data$internet, plot = FALSE)
+internet_table 
+
+## Diagrama de barras de frecuencia
+internet_table %>% ggplot(x=2, aes(x=var, y= frequency)) +
+  geom_bar(stat = "identity", fill="steelblue", color="black") +
+  labs(x="Internet", y="Frecuencia") 
+  
+
+## Diagrama de torta
+internet_table %>% ggplot(aes(x=2, y=percentage, fill=var)) +
+  geom_bar(stat="identity", width=1, color="black") +
+  coord_polar("y", start=0) +
+  labs(fill="Acceso a Internet") + 
+  theme_void() +
+  geom_text(aes(label = percent(percentage/100)),position = position_stack(vjust = 0.5),color = "white", size=5) +
+  xlim(0.5, 2.5) 
+
+# Reason
+
+## Tabla de frecuencia
+internet_table <- freq(data$reason, plot = FALSE)
+internet_table 
+
+## Diagrama de barras de frecuencia
+internet_table %>% ggplot(x=2, aes(x=var, y= frequency)) +
+  geom_bar(stat = "identity", fill="steelblue", color="black") +
+  labs(x="Reason", y="Frecuencia") 
+
+## Diagrama de torta
+internet_table %>% ggplot(aes(x=2, y=percentage, fill=var)) +
+  geom_bar(stat="identity", width=1, color="black") +
+  coord_polar("y", start=0) +
+  labs(fill="Reason") + 
+  theme_void() +
+  geom_text(aes(label = percent(percentage/100)),position = position_stack(vjust = 0.5),color = "white", size=5) +
+  xlim(0.5, 2.5) 
 
 
-create_report(data)
+# Inasistencias
 
+## Tabla de frecuencia
+internet_table <- freq(data$absences, plot = FALSE)
+internet_table 
+
+## Diagrama de barras de frecuencia
+internet_table %>% ggplot(x=2, aes(x=var, y= frequency)) +
+  geom_bar(stat = "identity", fill="steelblue", color="black") +
+  labs(x="Internet", y="Inasistencias") 
+
+
+## Diagrama de torta
+internet_table %>% ggplot(aes(x=2, y=percentage, fill=var)) +
+  geom_bar(stat="identity", width=1, color="black") +
+  coord_polar("y", start=0) +
+  labs(fill="Inasistencias") + 
+  theme_void() +
+  geom_text(aes(label = percent(percentage/100)),position = position_stack(vjust = 0.5),color = "white", size=5) +
+  xlim(0.5, 2.5) 
+
+# ANÁLISIS BIVARIADO
+
+# Internet vs G3
+internet_G3 <- data %>% select(G3, internet)
+
+## Tabla descriptiva
+psych::describeBy(internet_G3, internet_G3$internet, mat=TRUE, IQR = TRUE, quant = c(.25,.75), digits=4 ) %>% 
+  na.omit() %>%
+  select(-item, -vars) %>%
+  rename(category = group1)
+
+## Prueba Kruskal-Wallis
+kruskal.test(G3~internet,data=internet_G3)  # Medias iguales
+
+## Diagrama de barras
+internet_G3 %>% ggplot(aes(x=internet, y=G3))+
+  geom_boxplot(fill="orange")+
+  labs(y="Nota final matemáticas")+
+  theme_base()
+
+# Reason vs G3
+reason_G3 <- data %>% select(G3, reason)
+
+## Tabla descriptiva
+psych::describeBy(reason_G3, reason_G3$reason, mat=TRUE, IQR = TRUE, quant = c(.25,.75), digits=4 ) %>% 
+  na.omit() %>%
+  select(-item, -vars) %>%
+  rename(category = group1)
+
+## Prueba Kruskal-Wallis
+kruskal.test(G3~reason, data=reason_G3)  # Medias iguales
+
+## Diagrama de barras
+reason_G3 %>% ggplot(aes(x=reason, y=G3))+
+  geom_boxplot(fill="orange")+
+  labs(y="Nota final matemáticas")+
+  theme_base()
+
+# Abscences vs G3
+absences_G3 <- data %>% select(G3, absences)
+
+## Tabla descriptiva
+psych::describeBy(absences_G3, absences_G3$absences, mat=TRUE, IQR = TRUE, quant = c(.25,.75), digits=4 ) %>% 
+  na.omit() %>%
+  select(-item, -vars) %>%
+  rename(category = group1)
+
+## Prueba Kruskal-Wallis
+kruskal.test(G3~absences, data=absences_G3)  # Medias diferentes
+
+## Prueba Wilcoxon
+pairwise.wilcox.test(x=absences_G3$G3,g=absences_G3$absences) # INTERPRETAR RESULTADOS!
+
+## Diagrama de barras
+absences_G3 %>% ggplot(aes(x=absences, y=G3))+
+  geom_boxplot(fill="orange")+
+  labs(y="Nota final matemáticas")+
+  theme_base()
