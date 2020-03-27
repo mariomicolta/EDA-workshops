@@ -1,20 +1,210 @@
 ---
 title: "Maths Analisys"
 author: "Yesid López - Mario Micolta - Daniel Gutiérrez"
-date: "3/22/2020"
+date: "Marzo de 2020"
 output: html_document
+subtitle: 'Analisis descriptivo de una bd..de '
 ---
+
+
+
+<script>
+   $(document).ready(function() {
+     $head = $('#header');
+     $head.prepend('<img src=\"icesi.png\" style=\"float: right;width: 350px;\"/>')
+   });
+</script>
+
+___
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(error = FALSE)
+
 library(ggplot2)
 library(DataExplorer)
 library(dplyr)
+library(ggthemes)
+library(psych)
+library(funModeling)
+library(nortest)
+library(knitr)
+
+library(car)
+library(nortest)
+library(corrplot)
+library(fitur)
+library(ggplot2)
+library(directlabels)
+library(ggthemes)
+library(scales)
+library(gridExtra)
+library(stats)
+library(readxl)
+library(reshape2)
+library(dplyr)
+library(BSDA)
+library(e1071)
+
+library(hrbrthemes)
+library(viridis)
 ```
 
-## R Markdown
 
-```{r}
+
+```{r, functions}
+plotBar <- function(data){
+  #se requiere funModeling and tidyverse
+  plt <- funModeling::freq(data, plot = FALSE) %>%
+    ggplot(aes(x = var, y = percentage, fill = var)) + 
+    geom_bar(stat='identity', color = 'black') +
+    labs(fill = 'Tipos', y = 'Porcentaje', title = 'Posibles valores de la variable') +
+    scale_y_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
+    geom_text(aes(label = paste(percentage,'%')), nudge_y = 10, color = 'black', fontface = "bold") +
+    scale_fill_manual(values = c("#0D1F2D", "#546A7B", "#9EA3B0", "#91999F", "#33658A", "#2F4858", "#4F5D75", "#BFC0C0", "#212D40", "#364156")) +
+    theme_minimal() +
+    theme(
+      axis.title = element_blank(),
+      plot.subtitle = element_text(size = 12, color = "darkslategrey", margin = margin(b = 25)),
+      panel.grid.major.x = element_blank(),
+      panel.grid.minor = element_blank()
+    )
+  plt
+}
+
+
+```
+
+
+
+
+
+```{r, loadData, include=F}
+load("performance.RData")
+
+data <- base_f
+head(data)
+```
+
+
+
+```{r, preparingData}
+data$sex <- factor(data$sex, levels = c('F', 'M'), labels = c('Femenino', 'Masculino'))
+data$address <- factor(data$address, levels = c('R', 'U'), labels = c('Rural', 'Urbano'))
+data$Pstatus <- factor(data$Pstatus, levels = c('A', 'T'), labels = c('Separados', 'Viviendo juntos'))
+```
+
+
+
+# {.tabset .tabset-pills}
+
+
+
+
+
+
+## INTRODUCCIÓN
+
+___
+### INTRODUCCIÓN
+___
+
+Para el ICFES es muy importante conocer cuáles son los factores de éxito en el desempeño en un curso de matemáticas de estudiantes de grado 10mo.
+
+El presente informe, tiene como objetivo presentar las características de los datos de estudiantes de grado 10mo que incluye su desempeño el curso de matemáticas.
+
+Los datos fueron recolectados en un colegio a través del seguimiento del rendimiento académico en el curso de matemáticas.
+
+Inicialmente se presentarán los detalles de la estructura de la base de datos, donde se detallará aspectos como el significado de cada fila y columna, los tipos de variable. Seguido de los detalles de la base de datos, expondremos los hallazgos más importantes en el análisis descriptivo univariado y bivariado y el tratamiento que les dimos. Por último, se listarán una serie de conclusiones y recomendaciones teniendo en cuenta los hallazgos encontrados en los datos.
+
+
+
+
+## ESTRUCTURA DE LOS DATOS
+
+___
+### ESTRUCTURA DE LOS DATOS
+___
+
+
+Se pudo observar que la base de datos contiene **`r nrow(data)`** registros y un total de **`r ncol(data)`** variables.
+
+Además, se pudo observar las siguientes características:
+
+* Las filas representan los individuos del grado 10mo que realizaron el curso de matemáticas y la calificación respectiva.
+* Las columnas describen la información personal asociada al estudiante y los resultados obtenidos.
+* Se observa que la estructura de los datos es de **Corte Transversal**.
+
+
+
+
+
+## ANÁLISIS DESCRIPTIVO
+
+
+
+___
+### ANÁLISIS UNIVARIADO
+___
+
+#### VARIABLE SEX
+
+Esta es una variable cualitativa. Se utilizan las herramientas dispuestas para realizar el análisis de este tipo de variables.
+
+```{r, sex}
+tablaFrecuencias(data$sex)
+plotBar(data$sex)
+```
+
+
+
+#SEX - CUALITATIVA #########################
+#Tabla frecuencia
+#No se observa nada extraño ni curioso
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+___
+### ANÁLISIS BIIVARIADO
+___
+
+
+
+
+
+
+
+## CONCLUSIONES Y RECOMENDACIONES
+
+
+
+___
+### CONCLUSIONES
+___
+
+
+
+___
+### RECOMENDACIONES
+___
+
+
+
+
+```{r, include=FALSE}
 load("performance.RData")
 
 data <- base_f
@@ -79,6 +269,6 @@ str(data)
 summary(data)
 
 # Variable dependiente
-create_report(data)
+#create_report(data)
 ```
 
